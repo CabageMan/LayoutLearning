@@ -1,0 +1,15 @@
+// Variables
+
+$mainBackgroundColor: cyan;
+
+// Mixins
+@mixin fakeItem {
+    text-align: center;
+    color: white;
+    background-color: $mainBackgroundColor;
+}
+
+// Styles
+html {
+    @include fakeItem;
+}
