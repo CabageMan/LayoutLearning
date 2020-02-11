@@ -1,0 +1,88 @@
+// Variables
+$blueColor: #61aaff;
+$buttonIconWidth: 13px;
+$buttonIconHeight: 6px;
+
+// Mixins
+@mixin common-button {
+    margin-top: 25px;
+    margin-right: 38px;
+    padding-left: 23px;
+    display: inline-block;
+    text: {
+        align: center;
+        decoration: none;
+    }
+    font: {
+        family: Khula;
+        weight: 600;
+        size: 16px;
+    }
+}
+
+@mixin bordered($color) {
+    @include common-button;
+    border: 1px solid $color;
+    color: $color
+}
+
+@mixin filled {
+    @include common-button;
+    background-color: $blueColor;
+    color: white;
+}
+
+@mixin icon($float, $width, $height) {
+    content: "";
+    background: {
+      size: $width;
+      repeat: no-repeat;
+      position: center;
+    }
+    width: $width;
+    height: $height;
+    float: $float;
+    margin-top: 9px;
+    margin-right: 17px;
+  }
+
+// Styles
+.empty {
+    &-small {
+        @include bordered($color: $blueColor);
+        width: 192px;
+        height: 46px;
+    }
+
+    &-large {
+        @include bordered($color: $blueColor);
+        width: 192px;
+        height: 56px;
+    }
+
+    &-white {
+        @include bordered($color: white);
+        width: 192px;
+        height: 56px;
+    }
+}
+
+.filled {
+    &-small {
+        @include filled;
+        width: 189px;
+        height: 56px;
+    }
+
+    &-large {
+        @include filled;
+        width: 192px;
+        height: 56px;
+    }
+}
+
+.button-icon:after { 
+    @include icon(right, $buttonIconWidth, $buttonIconHeight);
+ }
+.arrow-white:after { background-image: url("/assets/images/ArrowWhite.png"); }
+.arrow-blue:after { background-image: url("/assets/images/ArrowBlue.png"); }

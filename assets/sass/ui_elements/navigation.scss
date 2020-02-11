@@ -9,9 +9,14 @@
 
     &-link {
         text-align: center;
-        padding: 14px 16px;
+        padding-right: 30px;
         text-decoration: none;
-        font-size: 17px;
+        color: black;
+        font: {
+            family: Khula;
+            weight: 400;
+            size: 14px;
+        }
     }
 
     &-item-left {

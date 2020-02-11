@@ -1,3 +1,39 @@
+@font-face {
+  font-family: Khula;
+  src: url("/assets/fonts/Khula-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Khula;
+  src: url("/assets/fonts/Khula-Light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Khula;
+  src: url("/assets/fonts/Khula-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Khula;
+  src: url("/assets/fonts/Khula-Semibold.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: SFUIText;
+  src: url("/assets/fonts/SFUIText-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: SFUIText;
+  src: url("/assets/fonts/SFUIText-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
 .navbar-logo {
   margin-top: 32px;
   margin-left: 25px;
@@ -6,9 +42,12 @@
 }
 .navbar-link {
   text-align: center;
-  padding: 14px 16px;
+  padding-right: 30px;
   text-decoration: none;
-  font-size: 17px;
+  color: black;
+  font-family: Khula;
+  font-weight: 400;
+  font-size: 14px;
 }
 .navbar-item-left {
   grid-area: item-left;
@@ -26,6 +65,103 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: "item-left item-right";
+}
+
+.empty-small {
+  margin-top: 25px;
+  margin-right: 38px;
+  padding-left: 23px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-family: Khula;
+  font-weight: 600;
+  font-size: 16px;
+  border: 1px solid #61aaff;
+  color: #61aaff;
+  width: 192px;
+  height: 46px;
+}
+.empty-large {
+  margin-top: 25px;
+  margin-right: 38px;
+  padding-left: 23px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-family: Khula;
+  font-weight: 600;
+  font-size: 16px;
+  border: 1px solid #61aaff;
+  color: #61aaff;
+  width: 192px;
+  height: 56px;
+}
+.empty-white {
+  margin-top: 25px;
+  margin-right: 38px;
+  padding-left: 23px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-family: Khula;
+  font-weight: 600;
+  font-size: 16px;
+  border: 1px solid white;
+  color: white;
+  width: 192px;
+  height: 56px;
+}
+
+.filled-small {
+  margin-top: 25px;
+  margin-right: 38px;
+  padding-left: 23px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-family: Khula;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #61aaff;
+  color: white;
+  width: 189px;
+  height: 56px;
+}
+.filled-large {
+  margin-top: 25px;
+  margin-right: 38px;
+  padding-left: 23px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-family: Khula;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #61aaff;
+  color: white;
+  width: 192px;
+  height: 56px;
+}
+
+.button-icon:after {
+  content: "";
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 13px;
+  height: 6px;
+  float: right;
+  margin-top: 9px;
+  margin-right: 17px;
+}
+
+.arrow-white:after {
+  background-image: url("/assets/images/ArrowWhite.png");
+}
+
+.arrow-blue:after {
+  background-image: url("/assets/images/ArrowBlue.png");
 }
 
 .home-header {
@@ -56,12 +192,6 @@
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-rows: 95px auto auto auto auto auto auto;
   grid-template-areas: "header header header" ". section-a ." ". section-b ." "section-c section-c section-c" ". section-d ." ". section-e ." "footer footer footer";
-}
-
-html {
-  text-align: center;
-  color: white;
-  background-color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
