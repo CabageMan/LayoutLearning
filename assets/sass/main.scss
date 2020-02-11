@@ -1,15 +1,12 @@
 // Variables
+$mainBackgroundColor: white;
 
-$mainBackgroundColor: cyan;
+// Imports
+@import "ui_elements/navigation.scss";
+@import "ui_elements/buttons.scss";
+@import "pages/home.scss";
 
 // Mixins
-@mixin fakeItem {
-    text-align: center;
-    color: white;
-    background-color: $mainBackgroundColor;
-}
 
 // Styles
-html {
-    @include fakeItem;
-}
+

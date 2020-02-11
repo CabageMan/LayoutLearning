@@ -1,7 +1,67 @@
+.navbar-logo {
+  margin-top: 32px;
+  margin-left: 25px;
+  width: 190px;
+  height: 47px;
+}
+.navbar-link {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar-item-left {
+  grid-area: item-left;
+  justify-self: start;
+  align-self: center;
+}
+.navbar-item-right {
+  grid-area: item-right;
+  justify-self: end;
+  align-self: center;
+}
+.navbar-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "item-left item-right";
+}
+
+.home-header {
+  grid-area: header;
+}
+.home-section-a {
+  grid-area: section-a;
+}
+.home-section-b {
+  grid-area: section-b;
+}
+.home-section-c {
+  grid-area: section-c;
+  background-color: blue;
+}
+.home-section-d {
+  grid-area: section-d;
+}
+.home-section-e {
+  grid-area: section-e;
+}
+.home-footer {
+  grid-area: footer;
+  background-color: #fafafa;
+}
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 95px auto auto auto auto auto auto;
+  grid-template-areas: "header header header" ". section-a ." ". section-b ." "section-c section-c section-c" ". section-d ." ". section-e ." "footer footer footer";
+}
+
 html {
   text-align: center;
   color: white;
-  background-color: cyan;
+  background-color: white;
 }
 
 /*# sourceMappingURL=main.css.map */

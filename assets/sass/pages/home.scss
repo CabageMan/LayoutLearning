@@ -1,0 +1,51 @@
+// Variables
+$footerBackGroundColor: #fafafa;
+
+// Styles
+.home {
+    &-header {
+        grid-area: header;
+    }
+
+    &-section-a {
+        grid-area: section-a;
+    }
+
+    &-section-b {
+        grid-area: section-b;
+    }
+
+    &-section-c {
+        grid-area: section-c;
+        background-color: blue;
+    }
+
+    &-section-d {
+        grid-area: section-d;
+    }
+
+    &-section-e {
+        grid-area: section-e;
+    }
+
+    &-footer {
+        grid-area: footer;
+        background-color: $footerBackGroundColor;
+    }
+
+    &-container {
+        display: grid;
+        grid-template: {
+            columns: 1fr 8fr 1fr;
+            rows: 95px auto auto auto auto auto auto;
+            areas: 
+                "header header header"
+                ". section-a ." 
+                ". section-b ."
+                "section-c section-c section-c"
+                ". section-d ." 
+                ". section-e ."
+                "footer footer footer";
+        }
+    }
+}
