@@ -1,13 +1,13 @@
 // Variables
 $blueColor: #61aaff;
 $buttonIconWidth: 13px;
-$buttonIconHeight: 6px;
+$buttonIconHeight: 8px;
 
 // Mixins
 @mixin common-button {
-    margin-top: 25px;
-    margin-right: 38px;
-    padding-left: 23px;
+    // margin-top: 25px;
+    // margin-right: 38px;
+    // padding-left: 23px;
     display: inline-block;
     text: {
         align: center;
@@ -28,6 +28,7 @@ $buttonIconHeight: 6px;
 
 @mixin filled {
     @include common-button;
+    border: none;
     background-color: $blueColor;
     color: white;
 }
@@ -42,7 +43,7 @@ $buttonIconHeight: 6px;
     width: $width;
     height: $height;
     float: $float;
-    margin-top: 9px;
+    margin-top: 6px;
     margin-right: 17px;
   }
 
@@ -84,5 +85,5 @@ $buttonIconHeight: 6px;
 .button-icon:after { 
     @include icon(right, $buttonIconWidth, $buttonIconHeight);
  }
-.arrow-white:after { background-image: url("/assets/images/ArrowWhite.png"); }
-.arrow-blue:after { background-image: url("/assets/images/ArrowBlue.png"); }
+.arrow-white:after { background-image: url("/assets/images/WhiteArrow.svg"); }
+.arrow-blue:after { background-image: url("/assets/images/BlueArrow.svg"); }
