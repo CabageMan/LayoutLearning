@@ -2,11 +2,11 @@
 .navbar {
     &-container {
         display: flex;
+        justify-content: space-between;
         margin-top: 31px;
     }
 
-    &-item-left {
-        flex: 30%;
+    &-logo {
         padding-left: 23px;
         a {
             width: 190px;
@@ -14,10 +14,9 @@
         }
     }
 
-    &-item-right {
+    &-links {
         display: flex;
         justify-content: flex-end;
-        flex: 70%;
         padding: 12px 40px;
         a {
             align-self: center;

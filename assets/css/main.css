@@ -36,23 +36,22 @@
 }
 .navbar-container {
   display: flex;
+  justify-content: space-between;
   margin-top: 31px;
 }
-.navbar-item-left {
-  flex: 30%;
+.navbar-logo {
   padding-left: 23px;
 }
-.navbar-item-left a {
+.navbar-logo a {
   width: 190px;
   height: 47px;
 }
-.navbar-item-right {
+.navbar-links {
   display: flex;
   justify-content: flex-end;
-  flex: 70%;
   padding: 12px 40px;
 }
-.navbar-item-right a {
+.navbar-links a {
   align-self: center;
   text-align: center;
   padding-right: 65px;
@@ -147,103 +146,86 @@
   background-image: url("/assets/images/BlueArrow.svg");
 }
 
-.home-section-a {
+.cryptocurrency-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 835px;
+}
+.cryptocurrency-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 1280px;
+  height: 625px;
+}
+.cryptocurrency-text {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  height: 392px;
+  padding-left: 122px;
+  padding-top: 103px;
 }
-.home-section-a-left {
-  flex: 66.6%;
-}
-.home-section-a-left h1 {
-  margin-top: 208px;
-  margin-left: 115px;
+.cryptocurrency-text h1 {
+  margin: 0;
   color: black;
   text-align: left;
   font-family: Khula;
   font-weight: 300;
   font-size: 56px;
 }
-.home-section-a-left p {
-  margin-left: 116px;
+.cryptocurrency-text p {
+  margin-top: 23px;
   color: black;
   text-align: left;
   font-family: Khula;
   font-weight: 400;
   font-size: 16px;
 }
-.home-section-a-left form {
-  display: inline;
-  margin-left: 117px;
+.cryptocurrency-text form {
+  display: flex;
+  align-items: center;
+  margin-top: 37px;
 }
-.home-section-a-left input {
-  width: 388px;
+.cryptocurrency-text input {
+  width: 348px;
   height: 56px;
   background-color: #fafafa;
   border: none;
   padding: 0 20px;
 }
-.home-section-a-left input, .home-section-a-left input::placeholder {
+.cryptocurrency-text input, .cryptocurrency-text input::placeholder {
   font-family: Khula;
   font-weight: 400;
   font-size: 16px;
 }
-.home-section-a-right {
-  flex: 33.3%;
+.cryptocurrency-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  height: inherit;
 }
-.home-section-a hr {
-  align-self: center;
-  margin-top: 7px;
+.cryptocurrency-images .silver-phone {
+  margin-top: 23px;
+  margin-left: 112px;
+  width: 348px;
+  height: 569px;
+}
+.cryptocurrency-images .silver-phone-shadow {
+  margin-top: -24px;
+  margin-left: -22px;
+}
+.cryptocurrency-divider hr {
+  margin-top: -21px;
   width: 342px;
   height: 2px;
   background-color: #e9e9e9;
   border: none;
-}
-.home-section-b {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.home-section-b-title h1 {
-  margin-top: 105px;
-  color: black;
-  text-align: center;
-  font-family: Khula;
-  font-weight: 300;
-  font-size: 56px;
-}
-.home-section-b-content {
-  display: block;
-  width: 100%;
-  height: 410px;
-  margin-top: 194px;
-  background-color: #f7f7f7;
-}
-.home-section-b-content li {
-  width: 43px;
-  height: 43px;
-  background-color: blue;
-  color: white;
-}
-.home-section-c {
-  display: flex;
-}
-.home-section-d {
-  display: flex;
-}
-.home-section-e {
-  display: flex;
-}
-
-.silver-phone {
-  float: right;
-  margin-top: 140px;
-  margin-right: 84px;
-  width: 348px;
-  height: 569px;
-}
-.silver-phone-shadow {
-  margin-top: -24px;
-  margin-right: -20px;
 }
 
 .black-phone {
@@ -256,6 +238,12 @@
 .black-phone-shadow {
   margin-top: -24px;
   margin-right: -20px;
+}
+
+@media screen and (min-width: 1320px) {
+  .cryptocurrency-content {
+    max-width: 1280px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
