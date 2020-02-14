@@ -3,6 +3,10 @@ $footerBackGroundColor: #fafafa;
 $inputBackGroundColor: #fafafa; 
 $dividerColor: #e9e9e9;
 $sectionBBackgroundColor: #f7f7f7;
+$numberGradientStartColor:  #559dff;
+$numberGradientEndColor:  #377cff;
+$backgroundGradientStartColor: #61aaff;
+$backgroundGradientEndColor: #2a6dff;
 
 // Styles
 .cryptocurrency {
@@ -155,6 +159,11 @@ $sectionBBackgroundColor: #f7f7f7;
         width: 750px;
         height: inherit;
     }
+
+    &-button {
+        align-self: flex-end;
+        margin-bottom: -142px;
+    }
 }
 
 .list {
@@ -175,7 +184,7 @@ $sectionBBackgroundColor: #f7f7f7;
         background-image:
             linear-gradient(
             to top right, 
-            #559dff, #377cff
+            $numberGradientStartColor, $numberGradientEndColor
         );
         @include khula-regular-large;
     }
@@ -198,6 +207,76 @@ $sectionBBackgroundColor: #f7f7f7;
             text-align: left;
             color: black;
             @include khula-regular-middle;
+        }
+    }
+}
+
+.imac {
+    &-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 889px;
+        margin-top: 229px;
+        background-image:
+            linear-gradient(
+            to top right, 
+            $backgroundGradientStartColor, $backgroundGradientEndColor
+        );
+    }
+
+    &-content {
+        display: flex;
+        justify-content: flex-end;
+        height: 660px;
+    }
+
+    &-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 630px;
+        height: 545px;
+        
+        h1 {
+            @include khula-light-large;
+            color: white;
+            height: 79px;
+        }
+        p {
+            @include khula-regular-middle;
+            color: white;
+            height: 56px;
+        }
+    }
+
+    &-logos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 488px;
+        height: 125px;
+    }
+
+    &-images {
+        display: flex;
+        width: 689px;
+        height: inherit;
+        overflow: hidden;
+
+        &-lock {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            width: 92px;
+        }
+
+        &-imac {
+            display: flex;
+            justify-content: flex-start;
+            width: 598px;
         }
     }
 }
