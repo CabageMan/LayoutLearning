@@ -59,9 +59,9 @@ $buttonIconHeight: 8px;
         height: 56px;
     }
 
-    &-white {
-        @include bordered($color: white);
-        width: 192px;
+    &-blue {
+        @include bordered($color: $blueColor);
+        width: 189px;
         height: 56px;
     }
 }

@@ -88,17 +88,17 @@
   width: 192px;
   height: 56px;
 }
-.empty-white {
+.empty-blue {
   display: inline-block;
   text-align: center;
   text-decoration: none;
   font-family: Khula;
   font-weight: 600;
   font-size: 16px;
-  border: 1px solid white;
-  color: white;
+  border: 1px solid #61aaff;
+  color: #61aaff;
   background-color: transparent;
-  width: 192px;
+  width: 189px;
   height: 56px;
 }
 
@@ -447,6 +447,94 @@
   color: black;
   text-align: center;
   margin-top: -23px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 1623px;
+}
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 208px;
+}
+.about-us h2 {
+  font-family: Khula;
+  font-weight: 300;
+  font-size: 34px;
+  text-align: center;
+  color: black;
+  height: 112px;
+}
+.about-our-partners {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 230px;
+}
+.about-our-partners h1 {
+  font-family: Khula;
+  font-weight: 300;
+  font-size: 46px;
+  text-align: center;
+  color: black;
+  height: 60px;
+}
+.about-our-partners p {
+  font-family: Khula;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: black;
+  height: 56px;
+}
+.about-subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 164px;
+}
+.about-subscribe h2 {
+  font-family: Khula;
+  font-weight: 300;
+  font-size: 34px;
+  text-align: center;
+  color: black;
+  height: 56px;
+}
+.about-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 407px;
+  height: 56px;
+}
+.about-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 623px;
+  height: 66px;
+}
+.about-email-field {
+  width: 348px;
+  height: 56px;
+  background-color: #fafafa;
+  border: none;
+  padding: 0 20px;
+}
+.about-email-field, .about-email-field::placeholder {
+  font-family: Khula;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 1320px) {

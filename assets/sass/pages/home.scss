@@ -337,6 +337,96 @@ $backgroundGradientEndColor: #2a6dff;
     }
 }
 
+.about {
+    &-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 1623px;
+    }
+
+    &-us {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 208px;
+
+        h2 {
+            @include khula-light-small;
+            text-align: center;
+            color: black;
+            height: 112px;
+        }
+    }
+
+    &-our-partners {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 230px;
+
+        h1 {
+            @include khula-light-middle;
+            text-align: center;
+            color: black;
+            height: 60px;
+        }
+
+        p {
+            @include khula-regular-middle;
+            text-align: center;
+            color: black;
+            height: 56px;
+        }
+    }
+
+    &-subscribe {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 164px;
+
+        h2 {
+            @include khula-light-small;
+            text-align: center;
+            color: black;
+            height: 56px;
+        }
+    }
+
+    &-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 407px;
+        height: 56px;
+    }
+
+    &-logos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 623px;
+        height: 66px;
+    }
+
+    &-email-field {
+        width: 348px;
+        height: 56px;
+        background-color: $inputBackGroundColor;
+        border: none;
+        padding: 0 20px;
+        &, &::placeholder {
+            @include khula-regular-middle;
+        }
+    }
+}
+
 @media screen and (min-width: 1320px) {
     .cryptocurrency-content {
         max-width: 1280px;
