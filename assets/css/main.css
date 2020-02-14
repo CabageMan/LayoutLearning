@@ -148,6 +148,7 @@
 
 .cryptocurrency-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -221,23 +222,108 @@
   margin-left: -22px;
 }
 .cryptocurrency-divider hr {
-  margin-top: -21px;
+  margin-top: 83px;
   width: 342px;
   height: 2px;
   background-color: #e9e9e9;
   border: none;
 }
 
-.black-phone {
-  float: left;
+.invest-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 900px;
+}
+.invest-title {
+  margin: 0px;
+}
+.invest-title h1 {
+  color: black;
+  text-align: center;
+  font-family: Khula;
+  font-weight: 300;
+  font-size: 56px;
+}
+.invest-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 1280px;
+  height: 410px;
+  margin-top: 157px;
+  background-color: #f7f7f7;
+}
+.invest-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  width: 530px;
+  height: inherit;
+}
+.invest-images .black-phone {
   margin-top: -79px;
-  margin-left: 63px;
+  margin-left: 66px;
   width: 348px;
   height: 569px;
 }
-.black-phone-shadow {
+.invest-images .black-phone-shadow {
   margin-top: -24px;
   margin-right: -20px;
+}
+.invest-text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  width: 750px;
+  height: inherit;
+}
+
+.list-item {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.list-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43px;
+  height: 43px;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(to top right, #559dff, #377cff);
+  font-family: Khula;
+  font-weight: 400;
+  font-size: 24px;
+}
+.list-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 25px;
+}
+.list-content h3 {
+  margin-top: 2px;
+  text-align: left;
+  color: black;
+  font-family: Khula;
+  font-weight: 400;
+  font-size: 24px;
+}
+.list-content p {
+  margin-top: -23px;
+  text-align: left;
+  color: black;
+  font-family: Khula;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 1320px) {
