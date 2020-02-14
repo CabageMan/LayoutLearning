@@ -281,6 +281,62 @@ $backgroundGradientEndColor: #2a6dff;
     }
 }
 
+.advantages {
+    &-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 429px;
+        h1 {
+            @include khula-light-large;
+            color: black;
+            text-align: center;
+            margin-top: 148px;
+        }
+    }
+
+    &-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        width: 1280px;
+        height: 532px;
+        background-color: $sectionBBackgroundColor;
+    }
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 426px;
+        height: 266px;
+
+        h3 {
+            @include khula-semibold;
+            color: black;
+            text-align: center;
+            margin-top: 28px;
+        }
+
+        p {
+            @include khula-regular-middle;
+            color: black;
+            text-align: center;
+            margin-top: -23px;
+        }
+    }
+}
+
 @media screen and (min-width: 1320px) {
     .cryptocurrency-content {
         max-width: 1280px;
