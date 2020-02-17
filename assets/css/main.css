@@ -147,11 +147,11 @@
 }
 
 .arrow-white:after {
-  background-image: url("/assets/images/WhiteArrow.svg");
+  background-image: url("/assets/images/icons/WhiteArrow.svg");
 }
 
 .arrow-blue:after {
-  background-image: url("/assets/images/BlueArrow.svg");
+  background-image: url("/assets/images/icons/BlueArrow.svg");
 }
 
 .cryptocurrency-container {

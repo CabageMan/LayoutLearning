@@ -84,5 +84,5 @@ $buttonIconHeight: 8px;
 .button-icon:after { 
     @include icon(right, $buttonIconWidth, $buttonIconHeight);
  }
-.arrow-white:after { background-image: url("/assets/images/WhiteArrow.svg"); }
-.arrow-blue:after { background-image: url("/assets/images/BlueArrow.svg"); }
+.arrow-white:after { background-image: url("/assets/images/icons/WhiteArrow.svg"); }
+.arrow-blue:after { background-image: url("/assets/images/icons/BlueArrow.svg"); }
