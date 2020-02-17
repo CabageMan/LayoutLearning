@@ -1,41 +1,20 @@
-// Variables
-$footerBackGroundColor: #fafafa;
-$inputBackGroundColor: #fafafa; 
-$dividerColor: #e9e9e9;
-$sectionBBackgroundColor: #f7f7f7;
-$numberGradientStartColor:  #559dff;
-$numberGradientEndColor:  #377cff;
-$backgroundGradientStartColor: #61aaff;
-$backgroundGradientEndColor: #2a6dff;
-$emailFieldBorderColor: #979797;
-$footerLinksColor: #001833;
-$footerTextColor: #959595;
-
 // Styles
 .cryptocurrency {
     &-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include column-center-center;
         flex-wrap: wrap;
         width: 100%;
         height: 835px;
     }
 
     &-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+        @include row-space-between-start;
         width: 1280px;
         height: 625px;
     }
 
     &-text {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-content: flex-start;
+        @include row-wrap-start-start;
         height: 392px;
         padding: {
             left: 122px;
@@ -73,10 +52,7 @@ $footerTextColor: #959595;
     }
 
     &-images {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-content: flex-start;
+        @include row-wrap-start-start;
         height: inherit;
 
         .silver-phone {
@@ -105,10 +81,7 @@ $footerTextColor: #959595;
 
 .invest {
     &-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
+        @include column-start-center;
         width: 100%;
         height: 900px;
     }
@@ -123,9 +96,7 @@ $footerTextColor: #959595;
     }
 
     &-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+        @include row-space-between-start;
         width: 1280px;
         height: 410px;
         margin-top: 157px;
@@ -133,10 +104,7 @@ $footerTextColor: #959595;
     }
 
     &-images {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-content: flex-start;
+        @include row-wrap-start-start;
         width: 530px;
         height: inherit;
 
@@ -293,10 +261,7 @@ $footerTextColor: #959595;
     }
 
     &-title {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include column-center-center;
         height: 429px;
         h1 {
             @include khula-light-large;
@@ -317,10 +282,7 @@ $footerTextColor: #959595;
     }
 
     &-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include column-center-center;
         width: 426px;
         height: 266px;
 
@@ -351,10 +313,7 @@ $footerTextColor: #959595;
     }
 
     &-us {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        @include column-space-between-center;
         height: 208px;
 
         h2 {
@@ -366,10 +325,7 @@ $footerTextColor: #959595;
     }
 
     &-our-partners {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        @include column-space-between-center;
         height: 230px;
 
         h1 {
@@ -388,10 +344,7 @@ $footerTextColor: #959595;
     }
 
     &-subscribe {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        @include column-space-between-center;
         height: 164px;
 
         h2 {
@@ -436,10 +389,7 @@ $footerTextColor: #959595;
 
 .footer {
     &-container { 
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
+        @include column-start-center;
         width: 100%;
         height: 1413px;
         background-color: $footerBackGroundColor;
@@ -524,3 +474,5 @@ $footerTextColor: #959595;
         max-width: 1280px;
     }    
 }
+
+// Total 526 lines

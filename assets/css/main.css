@@ -1,3 +1,31 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 31px;
+}
+.navbar-logo {
+  padding-left: 23px;
+}
+.navbar-logo a {
+  width: 190px;
+  height: 47px;
+}
+.navbar-links {
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px 40px;
+}
+.navbar-links a {
+  align-self: center;
+  text-align: center;
+  padding-right: 65px;
+  text-decoration: none;
+  color: black;
+  font-family: Khula;
+  font-weight: 400;
+  font-size: 14px;
+}
+
 @font-face {
   font-family: Khula;
   src: url("/assets/fonts/Khula-Bold.ttf") format("ttf");
@@ -34,34 +62,6 @@
   font-weight: 400;
   font-style: normal;
 }
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 31px;
-}
-.navbar-logo {
-  padding-left: 23px;
-}
-.navbar-logo a {
-  width: 190px;
-  height: 47px;
-}
-.navbar-links {
-  display: flex;
-  justify-content: flex-end;
-  padding: 12px 40px;
-}
-.navbar-links a {
-  align-self: center;
-  text-align: center;
-  padding-right: 65px;
-  text-decoration: none;
-  color: black;
-  font-family: Khula;
-  font-weight: 400;
-  font-size: 14px;
-}
-
 .empty-small {
   display: inline-block;
   cursor: pointer;

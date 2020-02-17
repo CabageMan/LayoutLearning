@@ -1,0 +1,91 @@
+// Fonts
+@mixin khula-light-small {
+    font: {
+        family: Khula;
+        weight: 300;
+        size: 34px;
+    }
+}
+
+@mixin khula-light-middle {
+    font: {
+        family: Khula;
+        weight: 300;
+        size: 46px;
+    }
+}
+
+@mixin khula-light-large {
+    font: {
+        family: Khula;
+        weight: 300;
+        size: 56px;
+    }
+}
+
+@mixin khula-regular-small {
+    font: {
+        family: Khula;
+        weight: 400;
+        size: 14px;
+    }
+}
+
+@mixin khula-regular-middle {
+    font: {
+        family: Khula;
+        weight: 400;
+        size: 16px;
+    }
+}
+
+@mixin khula-regular-large {
+    font: {
+        family: Khula;
+        weight: 400;
+        size: 24px;
+    }
+}
+
+@mixin khula-semibold {
+    font: {
+        family: Khula;
+        weight: 600;
+        size: 20px;
+    }
+}
+
+// Flexes
+@mixin column-center-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin row-space-between-start {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@mixin row-wrap-start-start {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+@mixin column-start-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin column-space-between-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}

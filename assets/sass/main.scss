@@ -2,12 +2,15 @@
 $mainBackgroundColor: white;
 
 // Imports
-@import "ui_elements/fonts.scss";
-@import "ui_elements/navigation.scss";
-@import "ui_elements/buttons.scss";
-@import "pages/home.scss";
+@import "abstracts/variables";
+@import "abstracts/mixins";
 
-// Mixins
+@import "layouts/navigation";
+
+@import "ui_elements/fonts.scss";
+@import "ui_elements/buttons.scss";
+
+@import "pages/home.scss";
 
 // Styles
 body, html {
