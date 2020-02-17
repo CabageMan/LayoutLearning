@@ -6,6 +6,7 @@ $buttonIconHeight: 8px;
 // Mixins
 @mixin common-button {
     display: inline-block;
+    cursor: pointer;
     text: {
         align: center;
         decoration: none;

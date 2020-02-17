@@ -64,6 +64,7 @@
 
 .empty-small {
   display: inline-block;
+  cursor: pointer;
   text-align: center;
   text-decoration: none;
   font-family: Khula;
@@ -77,6 +78,7 @@
 }
 .empty-large {
   display: inline-block;
+  cursor: pointer;
   text-align: center;
   text-decoration: none;
   font-family: Khula;
@@ -90,6 +92,7 @@
 }
 .empty-blue {
   display: inline-block;
+  cursor: pointer;
   text-align: center;
   text-decoration: none;
   font-family: Khula;
@@ -104,6 +107,7 @@
 
 .filled-small {
   display: inline-block;
+  cursor: pointer;
   text-align: center;
   text-decoration: none;
   font-family: Khula;
@@ -117,6 +121,7 @@
 }
 .filled-large {
   display: inline-block;
+  cursor: pointer;
   text-align: center;
   text-decoration: none;
   font-family: Khula;
@@ -525,11 +530,15 @@
   height: 66px;
 }
 .about-email-field {
-  width: 348px;
-  height: 56px;
-  background-color: #fafafa;
+  width: 450px;
+  height: 36px;
+  background-color: transparent;
   border: none;
-  padding: 0 20px;
+  padding-bottom: 6px;
+  text-align: center;
+  border-bottom-style: solid;
+  border-color: #979797;
+  border-width: 1px;
 }
 .about-email-field, .about-email-field::placeholder {
   font-family: Khula;
@@ -560,12 +569,34 @@
   width: 422px;
   height: 19px;
 }
+.footer-links a {
+  text-decoration: none;
+  color: #001833;
+  font-family: Khula;
+  font-weight: 400;
+  font-size: 14px;
+}
 .footer-social-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 118px;
   height: 19px;
+}
+.footer-social-links a {
+  background-repeat: no-repeat;
+}
+.footer-social-links a:hover {
+  opacity: 0.5;
+}
+.footer-social-links a.twitter {
+  background-image: url("/assets/images/TwitterLogo.svg");
+}
+.footer-social-links a.facebook {
+  background-image: url("/assets/images/FaceBookLogo.svg");
+}
+.footer-social-links a.m {
+  background-image: url("/assets/images/MLogo.svg");
 }
 .footer-title {
   display: flex;
@@ -575,6 +606,8 @@
   height: 145px;
 }
 .footer-title p {
+  color: #959595;
+  text-align: center;
   height: 52px;
 }
 .footer-content {
@@ -583,7 +616,21 @@
   width: 844px;
 }
 .footer-text {
+  font-family: Khula;
+  font-weight: 400;
+  font-size: 14px;
+  color: #959595;
   width: 407px;
+}
+.footer-text p {
+  text-align: justify;
+  text-indent: 50px;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+}
+.footer-text a {
+  color: #959595;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 1320px) {
@@ -595,6 +642,10 @@ body, html {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+*:focus {
+  outline: none;
 }
 
 /*# sourceMappingURL=main.css.map */

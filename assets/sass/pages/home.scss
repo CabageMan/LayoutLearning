@@ -7,6 +7,9 @@ $numberGradientStartColor:  #559dff;
 $numberGradientEndColor:  #377cff;
 $backgroundGradientStartColor: #61aaff;
 $backgroundGradientEndColor: #2a6dff;
+$emailFieldBorderColor: #979797;
+$footerLinksColor: #001833;
+$footerTextColor: #959595;
 
 // Styles
 .cryptocurrency {
@@ -416,11 +419,15 @@ $backgroundGradientEndColor: #2a6dff;
     }
 
     &-email-field {
-        width: 348px;
-        height: 56px;
-        background-color: $inputBackGroundColor;
+        width: 450px;
+        height: 36px;
+        background-color: transparent;
         border: none;
-        padding: 0 20px;
+        padding-bottom: 6px;
+        text-align: center;
+        border-bottom-style: solid;
+        border-color: $emailFieldBorderColor;
+        border-width: 1px;
         &, &::placeholder {
             @include khula-regular-middle;
         }
@@ -452,6 +459,11 @@ $backgroundGradientEndColor: #2a6dff;
         align-items: center;
         width: 422px;
         height: 19px;
+        a {
+            text-decoration: none;
+            color: $footerLinksColor;
+            @include khula-regular-small;
+        }
     }
 
     &-social-links {
@@ -460,6 +472,14 @@ $backgroundGradientEndColor: #2a6dff;
         align-items: center;
         width: 118px;
         height: 19px;
+
+        a {
+            background-repeat: no-repeat;
+            &:hover { opacity: 0.5; }
+            &.twitter { background-image: url("/assets/images/TwitterLogo.svg"); }
+            &.facebook { background-image: url("/assets/images/FaceBookLogo.svg"); }
+            &.m { background-image: url("/assets/images/MLogo.svg"); }
+        }
     }
 
     &-title {
@@ -470,6 +490,8 @@ $backgroundGradientEndColor: #2a6dff;
         height: 145px;
 
         p {
+            color: $footerTextColor;
+            text-align: center;
             height: 52px;
         }
     }
@@ -481,7 +503,19 @@ $backgroundGradientEndColor: #2a6dff;
     }
 
     &-text {
+        @include khula-regular-small;
+        color: $footerTextColor;
         width: 407px;
+        p {
+            text-align: justify;
+            text-indent: 50px;
+            line-height: 26px;
+            letter-spacing: 0.5px;
+        }
+        a {
+            color: $footerTextColor;
+            text-decoration: underline;
+        }
     }
 }
 
