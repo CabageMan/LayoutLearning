@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="12px" viewBox="0 0 24 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Header_mobile" transform="translate(-256.000000, -11.000000)" fill="#000205">
+            <g id="Header">
+                <path d="M256,11 L280,11 L280,14 L256,14 L256,11 Z M256,20 L280,20 L280,23 L256,23 L256,20 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
