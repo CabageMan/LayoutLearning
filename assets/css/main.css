@@ -62,6 +62,48 @@
   font-weight: 400;
   font-style: normal;
 }
+.khula-light-small {
+  font-family: Khula;
+  font-weight: 300;
+  font-size: 34px;
+}
+
+.khula-light-middle {
+  font-family: Khula;
+  font-weight: 300;
+  font-size: 46px;
+}
+
+.khula-light-large {
+  font-family: Khula;
+  font-weight: 300;
+  font-size: 56px;
+}
+
+.khula-regular-small {
+  font-family: Khula;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.khula-regular-middle {
+  font-family: Khula;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.khula-regular-large {
+  font-family: Khula;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.khula-semibold {
+  font-family: Khula;
+  font-weight: 600;
+  font-size: 20px;
+}
+
 .empty-small {
   display: inline-block;
   cursor: pointer;
@@ -154,46 +196,82 @@
   background-image: url("/assets/images/icons/BlueArrow.svg");
 }
 
-.cryptocurrency-container {
+.column-center-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.row-space-between-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.row-wrap-start-start {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.column-start-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.column-space-between-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column-space-around-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.row-space-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center-black {
+  text-align: center;
+  color: black;
+}
+
+.left-black {
+  text-align: left;
+  color: black;
+}
+
+.cryptocurrency-container {
   flex-wrap: wrap;
   width: 100%;
   height: 835px;
 }
 .cryptocurrency-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   width: 1280px;
   height: 625px;
 }
 .cryptocurrency-text {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: flex-start;
   height: 392px;
   padding-left: 122px;
   padding-top: 103px;
 }
 .cryptocurrency-text h1 {
   margin: 0;
-  color: black;
-  text-align: left;
-  font-family: Khula;
-  font-weight: 300;
-  font-size: 56px;
 }
 .cryptocurrency-text p {
   margin-top: 23px;
-  color: black;
-  text-align: left;
-  font-family: Khula;
-  font-weight: 400;
-  font-size: 16px;
 }
 .cryptocurrency-text form {
   display: flex;
@@ -213,10 +291,6 @@
   font-size: 16px;
 }
 .cryptocurrency-images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: flex-start;
   height: inherit;
 }
 .cryptocurrency-images .silver-phone {
@@ -238,37 +312,19 @@
 }
 
 .invest-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
   width: 100%;
   height: 900px;
 }
 .invest-title {
   margin: 0px;
 }
-.invest-title h1 {
-  color: black;
-  text-align: center;
-  font-family: Khula;
-  font-weight: 300;
-  font-size: 56px;
-}
 .invest-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   width: 1280px;
   height: 410px;
   margin-top: 157px;
   background-color: #f7f7f7;
 }
 .invest-images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: flex-start;
   width: 530px;
   height: inherit;
 }
@@ -310,9 +366,6 @@
   text-align: center;
   color: white;
   background-image: linear-gradient(to top right, #559dff, #377cff);
-  font-family: Khula;
-  font-weight: 400;
-  font-size: 24px;
 }
 .list-content {
   display: flex;
@@ -323,19 +376,9 @@
 }
 .list-content h3 {
   margin-top: 2px;
-  text-align: left;
-  color: black;
-  font-family: Khula;
-  font-weight: 400;
-  font-size: 24px;
 }
 .list-content p {
   margin-top: -23px;
-  text-align: left;
-  color: black;
-  font-family: Khula;
-  font-weight: 400;
-  font-size: 16px;
 }
 
 .imac-container {
@@ -361,23 +404,14 @@
   height: 545px;
 }
 .imac-text h1 {
-  font-family: Khula;
-  font-weight: 300;
-  font-size: 56px;
   color: white;
   height: 79px;
 }
 .imac-text p {
-  font-family: Khula;
-  font-weight: 400;
-  font-size: 16px;
   color: white;
   height: 56px;
 }
 .imac-logos {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 488px;
   height: 125px;
 }
@@ -399,25 +433,10 @@
   width: 598px;
 }
 
-.advantages-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
 .advantages-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 429px;
 }
 .advantages-title h1 {
-  font-family: Khula;
-  font-weight: 300;
-  font-size: 56px;
-  color: black;
-  text-align: center;
   margin-top: 148px;
 }
 .advantages-content {
@@ -430,102 +449,46 @@
   background-color: #f7f7f7;
 }
 .advantages-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 426px;
   height: 266px;
 }
 .advantages-item h3 {
-  font-family: Khula;
-  font-weight: 600;
-  font-size: 20px;
-  color: black;
-  text-align: center;
   margin-top: 28px;
 }
 .advantages-item p {
-  font-family: Khula;
-  font-weight: 400;
-  font-size: 16px;
-  color: black;
-  text-align: center;
   margin-top: -23px;
 }
 
 .about-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
   width: 100%;
   height: 1623px;
 }
 .about-us {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   height: 208px;
 }
 .about-us h2 {
-  font-family: Khula;
-  font-weight: 300;
-  font-size: 34px;
-  text-align: center;
-  color: black;
   height: 112px;
 }
 .about-our-partners {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   height: 230px;
 }
 .about-our-partners h1 {
-  font-family: Khula;
-  font-weight: 300;
-  font-size: 46px;
-  text-align: center;
-  color: black;
   height: 60px;
 }
 .about-our-partners p {
-  font-family: Khula;
-  font-weight: 400;
-  font-size: 16px;
-  text-align: center;
-  color: black;
   height: 56px;
 }
 .about-subscribe {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   height: 164px;
 }
 .about-subscribe h2 {
-  font-family: Khula;
-  font-weight: 300;
-  font-size: 34px;
-  text-align: center;
-  color: black;
   height: 56px;
 }
 .about-buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 407px;
   height: 56px;
 }
 .about-logos {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 623px;
   height: 66px;
 }
@@ -547,10 +510,6 @@
 }
 
 .footer-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
   width: 100%;
   height: 1413px;
   background-color: #fafafa;
@@ -563,23 +522,14 @@
   height: 100px;
 }
 .footer-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 422px;
   height: 19px;
 }
 .footer-links a {
   text-decoration: none;
   color: #001833;
-  font-family: Khula;
-  font-weight: 400;
-  font-size: 14px;
 }
 .footer-social-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 118px;
   height: 19px;
 }
@@ -616,9 +566,6 @@
   width: 844px;
 }
 .footer-text {
-  font-family: Khula;
-  font-weight: 400;
-  font-size: 14px;
   color: #959595;
   width: 407px;
 }

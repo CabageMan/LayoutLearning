@@ -24,7 +24,7 @@
             padding-right: 65px;
             text-decoration: none;
             color: black;
-            @include khula-regular-small;
+            @include khula-font(400, 14px);
         }
     }
 }

@@ -1,37 +1,84 @@
-// Styles
+// Flex styles
+.column-center-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-space-between-start {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.row-wrap-start-start {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.column-start-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.column-space-between-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column-space-around-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row-space-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// Text styles
+.center-black {
+    text-align: center;
+    color: black;
+}
+
+.left-black {
+    text-align: left;
+    color: black;
+}
+
+// Blocks Styles
 .cryptocurrency {
     &-container {
-        @include column-center-center;
         flex-wrap: wrap;
         width: 100%;
         height: 835px;
     }
 
     &-content {
-        @include row-space-between-start;
         width: 1280px;
         height: 625px;
     }
 
     &-text {
-        @include row-wrap-start-start;
         height: 392px;
         padding: {
             left: 122px;
             top: 103px;
         }
-        h1 {
-            margin: 0;
-            color: black;
-            text-align: left;
-            @include khula-light-large;
-        }
-        p {
-            margin-top: 23px;
-            color: black;
-            text-align: left;
-            @include khula-regular-middle;
-        }
+
+        h1 { margin: 0; }
+        p { margin-top: 23px; }
 
         form {
             display: flex;
@@ -45,14 +92,11 @@
             background-color: $inputBackGroundColor;
             border: none;
             padding: 0 20px;
-            &, &::placeholder {
-                @include khula-regular-middle;
-            }
+            &, &::placeholder { @include khula-font(400, 16px); }
         }
     }
 
     &-images {
-        @include row-wrap-start-start;
         height: inherit;
 
         .silver-phone {
@@ -81,22 +125,13 @@
 
 .invest {
     &-container {
-        @include column-start-center;
         width: 100%;
         height: 900px;
     }
 
-    &-title {
-        margin: 0px;
-        h1 {
-            color: black;
-            text-align: center;
-            @include khula-light-large;
-        }
-    }
+    &-title { margin: 0px; }
 
     &-content {
-        @include row-space-between-start;
         width: 1280px;
         height: 410px;
         margin-top: 157px;
@@ -104,7 +139,6 @@
     }
 
     &-images {
-        @include row-wrap-start-start;
         width: 530px;
         height: inherit;
 
@@ -152,12 +186,7 @@
         height: 43px;
         text-align: center;
         color: white;
-        background-image:
-            linear-gradient(
-            to top right, 
-            $numberGradientStartColor, $numberGradientEndColor
-        );
-        @include khula-regular-large;
+        @include background-gradient($numberGradientStartColor, $numberGradientEndColor);
     }
 
     &-content {
@@ -166,19 +195,8 @@
         justify-content: flex-start;
         align-items: flex-start;
         margin-left: 25px;
-
-        h3 {
-            margin-top: 2px;
-            text-align: left;
-            color: black;
-            @include khula-regular-large;
-        }
-        p {
-            margin-top: -23px;
-            text-align: left;
-            color: black;
-            @include khula-regular-middle;
-        }
+        h3 { margin-top: 2px; }
+        p { margin-top: -23px; }
     }
 }
 
@@ -190,11 +208,7 @@
         width: 100%;
         height: 889px;
         margin-top: 229px;
-        background-image:
-            linear-gradient(
-            to top right, 
-            $backgroundGradientStartColor, $backgroundGradientEndColor
-        );
+        @include background-gradient($backgroundGradientStartColor, $backgroundGradientEndColor);
     }
 
     &-content {
@@ -210,23 +224,17 @@
         align-items: flex-start;
         width: 630px;
         height: 545px;
-        
         h1 {
-            @include khula-light-large;
             color: white;
             height: 79px;
         }
         p {
-            @include khula-regular-middle;
             color: white;
             height: 56px;
         }
     }
 
     &-logos {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         width: 488px;
         height: 125px;
     }
@@ -253,22 +261,9 @@
 }
 
 .advantages {
-    &-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
     &-title {
-        @include column-center-center;
         height: 429px;
-        h1 {
-            @include khula-light-large;
-            color: black;
-            text-align: center;
-            margin-top: 148px;
-        }
+        h1 { margin-top: 148px; }
     }
 
     &-content {
@@ -282,91 +277,41 @@
     }
 
     &-item {
-        @include column-center-center;
         width: 426px;
         height: 266px;
-
-        h3 {
-            @include khula-semibold;
-            color: black;
-            text-align: center;
-            margin-top: 28px;
-        }
-
-        p {
-            @include khula-regular-middle;
-            color: black;
-            text-align: center;
-            margin-top: -23px;
-        }
+        h3 { margin-top: 28px; }
+        p { margin-top: -23px; }
     }
 }
 
 .about {
     &-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
         width: 100%;
         height: 1623px;
     }
 
     &-us {
-        @include column-space-between-center;
         height: 208px;
-
-        h2 {
-            @include khula-light-small;
-            text-align: center;
-            color: black;
-            height: 112px;
-        }
+        h2 { height: 112px; }
     }
 
     &-our-partners {
-        @include column-space-between-center;
         height: 230px;
-
-        h1 {
-            @include khula-light-middle;
-            text-align: center;
-            color: black;
-            height: 60px;
-        }
-
-        p {
-            @include khula-regular-middle;
-            text-align: center;
-            color: black;
-            height: 56px;
-        }
+        h1 { height: 60px; }
+        p { height: 56px; }
     }
 
     &-subscribe {
-        @include column-space-between-center;
         height: 164px;
-
-        h2 {
-            @include khula-light-small;
-            text-align: center;
-            color: black;
-            height: 56px;
-        }
+        h2 { height: 56px; }
     }
 
     &-buttons {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         width: 407px;
         height: 56px;
     }
 
     &-logos {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         width: 623px;
         height: 66px;
     }
@@ -381,15 +326,12 @@
         border-bottom-style: solid;
         border-color: $emailFieldBorderColor;
         border-width: 1px;
-        &, &::placeholder {
-            @include khula-regular-middle;
-        }
+        &, &::placeholder { @include khula-font(400, 16px); }
     }
 }
 
 .footer {
     &-container { 
-        @include column-start-center;
         width: 100%;
         height: 1413px;
         background-color: $footerBackGroundColor;
@@ -404,25 +346,17 @@
     }
 
     &-links {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         width: 422px;
         height: 19px;
         a {
             text-decoration: none;
             color: $footerLinksColor;
-            @include khula-regular-small;
         }
     }
 
     &-social-links {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         width: 118px;
         height: 19px;
-
         a {
             background-repeat: no-repeat;
             &:hover { opacity: 0.5; }
@@ -438,7 +372,6 @@
         align-items: flex-end;
         width: 844px;
         height: 145px;
-
         p {
             color: $footerTextColor;
             text-align: center;
@@ -453,7 +386,6 @@
     }
 
     &-text {
-        @include khula-regular-small;
         color: $footerTextColor;
         width: 407px;
         p {
@@ -474,5 +406,3 @@
         max-width: 1280px;
     }    
 }
-
-// Total 526 lines
