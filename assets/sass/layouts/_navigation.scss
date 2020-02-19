@@ -3,6 +3,7 @@
     &-container {
         display: flex;
         justify-content: space-between;
+        min-width: $minPageWidth;
         margin-top: 31px;
     }
 
