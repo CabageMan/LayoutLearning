@@ -18,15 +18,28 @@
 }
 .navbar-links a {
   align-self: center;
-  text-align: center;
   padding-right: 65px;
   text-decoration: none;
-  color: black;
   font-family: Khula;
   font-weight: 400;
   font-size: 14px;
 }
+.navbar-menu {
+  display: none;
+}
 
+@media screen and (max-width: 700px) {
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    min-width: 280px;
+    margin-top: 23px;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+}
 @font-face {
   font-family: Khula;
   src: url("/assets/fonts/Khula-Bold.ttf") format("ttf");
@@ -105,7 +118,7 @@
   font-size: 20px;
 }
 
-.empty-small {
+.empty-small, .empty-blue {
   display: inline-block;
   cursor: pointer;
   text-align: center;
@@ -116,6 +129,8 @@
   border: 1px solid #61aaff;
   color: #61aaff;
   background-color: transparent;
+}
+.empty-small {
   width: 192px;
   height: 46px;
 }
@@ -134,21 +149,11 @@
   height: 56px;
 }
 .empty-blue {
-  display: inline-block;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  font-family: Khula;
-  font-weight: 600;
-  font-size: 16px;
-  border: 1px solid #61aaff;
-  color: #61aaff;
-  background-color: transparent;
   width: 189px;
   height: 56px;
 }
 
-.filled-small {
+.filled-small, .filled-large {
   display: inline-block;
   cursor: pointer;
   text-align: center;
@@ -159,20 +164,12 @@
   border: none;
   background-color: #61aaff;
   color: white;
+}
+.filled-small {
   width: 189px;
   height: 56px;
 }
 .filled-large {
-  display: inline-block;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  font-family: Khula;
-  font-weight: 600;
-  font-size: 16px;
-  border: none;
-  background-color: #61aaff;
-  color: white;
   width: 192px;
   height: 56px;
 }
@@ -197,9 +194,12 @@
   background-image: url("/assets/images/icons/BlueArrow.svg");
 }
 
-.column-center-center {
+.column-center-center, .column-start-center, .column-space-between-center, .column-space-around-center {
   display: flex;
   flex-direction: column;
+}
+
+.column-center-center {
   justify-content: center;
   align-items: center;
 }
@@ -218,22 +218,16 @@
 }
 
 .column-start-center {
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
 
 .column-space-between-center {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
 .column-space-around-center {
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
@@ -269,7 +263,7 @@
   padding-top: 103px;
 }
 .cryptocurrency-text h1 {
-  margin: 0;
+  margin-top: 46px;
 }
 .cryptocurrency-text p {
   margin-top: 23px;
@@ -598,9 +592,9 @@
   text-decoration: underline;
 }
 
-@media screen and (min-width: 1320px) {
-  .cryptocurrency-content {
-    max-width: 1280px;
+@media screen and (max-width: 700px) {
+  .list-number {
+    background-image: linear-gradient(to top right, yellowgreen, green);
   }
 }
 body, html {

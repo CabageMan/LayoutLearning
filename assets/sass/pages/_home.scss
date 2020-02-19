@@ -1,7 +1,10 @@
 // Flex styles
-.column-center-center {
+.column-center-center, .column-start-center, .column-space-between-center, .column-space-around-center {
     display: flex;
     flex-direction: column;
+}
+
+.column-center-center {
     justify-content: center;
     align-items: center;
 }
@@ -20,22 +23,16 @@
 }
 
 .column-start-center {
-    display: flex;
-    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
 
 .column-space-between-center {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
 .column-space-around-center {
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
@@ -77,7 +74,7 @@
             top: 103px;
         }
 
-        h1 { margin: 0; }
+        h1 { margin-top: 46px; }
         p { margin-top: 23px; }
 
         form {
@@ -421,8 +418,14 @@
     }
 }
 
-@media screen and (min-width: 1320px) {
-    .cryptocurrency-content {
-        max-width: $minPageWidth;
-    }    
+// @media screen and (min-width: 1320px) {
+//     .cryptocurrency-content {
+//         max-width: $minPageWidth;
+//     }    
+// }
+
+@media screen and (max-width: 700px) {
+    .list-number {   
+        @include background-gradient(yellowgreen, green);
+    }
 }

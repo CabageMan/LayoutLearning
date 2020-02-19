@@ -7,10 +7,10 @@ $mainBackgroundColor: white;
 
 @import "layouts/navigation";
 
-@import "ui_elements/fonts.scss";
-@import "ui_elements/buttons.scss";
+@import "ui_elements/fonts";
+@import "ui_elements/buttons";
 
-@import "pages/home.scss";
+@import "pages/home";
 
 // Styles
 body, html {

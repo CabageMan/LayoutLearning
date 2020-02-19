@@ -1,0 +1,43 @@
+.empty {
+    &-small, &-blue {
+        @include bordered($color: $blueColor);
+    }
+
+    &-small {
+        width: $buttonWidth;
+        height: $buttonHeightSmall;
+    }
+
+    &-large {
+        @include bordered($color: white);
+        width: $buttonWidth;
+        height: $buttonHeight;
+    }
+
+    &-blue {
+        width: $buttonWidthSmall;
+        height: $buttonHeight;
+    }
+}
+
+.filled {
+    &-small, &-large {
+        @include filled;
+    }
+
+    &-small {
+        width: $buttonWidthSmall;
+        height: $buttonHeight;
+    }
+
+    &-large {
+        width: $buttonWidth;
+        height: $buttonHeight;
+    }
+}
+
+.button-icon:after { 
+    @include icon(right, $buttonIconWidth, $buttonIconHeight);
+ }
+.arrow-white:after { background-image: url("/assets/images/icons/WhiteArrow.svg"); }
+.arrow-blue:after { background-image: url("/assets/images/icons/BlueArrow.svg"); }

@@ -15,3 +15,46 @@
         $startColor, $endColor
     );
 }
+
+// Buttons
+@mixin common-button {
+    display: inline-block;
+    cursor: pointer;
+    text: {
+        align: center;
+        decoration: none;
+    }
+    font: {
+        family: Khula;
+        weight: 600;
+        size: 16px;
+    }
+}
+
+@mixin bordered($color) {
+    @include common-button;
+    border: 1px solid $color;
+    color: $color;
+    background-color: transparent;
+}
+
+@mixin filled {
+    @include common-button;
+    border: none;
+    background-color: $blueColor;
+    color: white;
+}
+
+@mixin icon($float, $width, $height) {
+    content: "";
+    background: {
+      size: $width;
+      repeat: no-repeat;
+      position: center;
+    }
+    width: $width;
+    height: $height;
+    float: $float;
+    margin-top: 6px;
+    margin-right: 17px;
+}
