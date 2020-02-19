@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Hamburger-Menu" transform="translate(-281.000000, -25.000000)" fill="#000000">
+            <g id="Header" transform="translate(20.000000, 16.000000)">
+                <path d="M270,15.3786797 L276.010408,9.36827202 L278.131728,11.4895924 L272.12132,17.5 L278.131728,23.5104076 L276.010408,25.631728 L270,19.6213203 L263.989592,25.631728 L261.868272,23.5104076 L267.87868,17.5 L261.868272,11.4895924 L263.989592,9.36827202 L270,15.3786797 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

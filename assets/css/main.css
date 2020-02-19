@@ -1,42 +1,81 @@
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  min-width: 1280px;
-  margin-top: 31px;
+  min-width: 280px;
+  margin-top: 15px;
 }
 .navbar-logo {
-  padding-left: 23px;
+  padding-left: 20px;
 }
 .navbar-logo a {
-  width: 190px;
-  height: 47px;
+  width: 88px;
+  height: 21px;
 }
 .navbar-links {
-  display: flex;
-  justify-content: flex-end;
-  padding: 12px 40px;
+  display: none;
 }
-.navbar-links a {
-  align-self: center;
-  padding-right: 65px;
+.navbar-menu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 5px 20px;
+}
+.navbar-menu-container {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 320px;
+  height: 570px;
+  margin-top: 15px;
+  margin-right: 0;
+  border-style: none solid solid solid;
+  border-color: #979797;
+  border-width: 1px;
+}
+.navbar-menu-container a {
+  margin-left: 70px;
   text-decoration: none;
   font-family: Khula;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
 }
-.navbar-menu {
-  display: none;
+.navbar-menu-container button {
+  align-self: center;
+}
+.navbar-menu-active {
+  display: flex;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 700px) {
   .navbar-container {
     display: flex;
     justify-content: space-between;
-    min-width: 280px;
-    margin-top: 23px;
+    min-width: 1280px;
+    margin-top: 31px;
   }
-
+  .navbar-logo {
+    padding-left: 23px;
+  }
+  .navbar-logo a {
+    width: 190px;
+    height: 47px;
+  }
   .navbar-links {
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px 40px;
+  }
+  .navbar-links a {
+    align-self: center;
+    padding-right: 65px;
+    text-decoration: none;
+    font-family: Khula;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .navbar-menu {
     display: none;
   }
 }
@@ -118,7 +157,7 @@
   font-size: 20px;
 }
 
-.empty-small, .empty-blue {
+.empty-small, .empty-blue, .empty-extra-large {
   display: inline-block;
   cursor: pointer;
   text-align: center;
@@ -152,6 +191,10 @@
   width: 189px;
   height: 56px;
 }
+.empty-extra-large {
+  width: 280px;
+  height: 56px;
+}
 
 .filled-small, .filled-large {
   display: inline-block;
@@ -172,6 +215,15 @@
 .filled-large {
   width: 192px;
   height: 56px;
+}
+
+.menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 .button-icon:after {
@@ -506,10 +558,9 @@
   width: 450px;
   height: 36px;
   background-color: transparent;
-  border: none;
   padding-bottom: 6px;
   text-align: center;
-  border-bottom-style: solid;
+  border-style: none none solid none;
   border-color: #979797;
   border-width: 1px;
 }

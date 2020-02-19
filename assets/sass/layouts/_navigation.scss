@@ -3,45 +3,90 @@
     &-container {
         display: flex;
         justify-content: space-between;
-        min-width: $minPageWidth;
-        margin-top: 31px;
+        min-width: 280px;
+        margin-top: 15px;
     }
 
     &-logo {
-        padding-left: 23px;
+        padding-left: $mobileSideMargin;
         a {
-            width: 190px;
-            height: 47px;
+            width: 88px;
+            height: 21px;
         }
     }
 
     &-links {
-        display: flex;
-        justify-content: flex-end;
-        padding: 12px 40px;
-        a {
-            align-self: center;
-            padding-right: 65px;
-            text-decoration: none;
-            @include khula-font(400, 14px);
-        }
+        display: none;
     }
 
     &-menu {
-        display: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 5px $mobileSideMargin;
+
+        &-container {
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            width: 320px;
+            height: 570px;
+            margin-top: 15px;
+            margin-right: 0;
+            border-style: none solid solid solid;
+            border-color: $emailFieldBorderColor;
+            border-width: 1px;
+    
+            a {
+                margin-left: 70px;
+                text-decoration: none;
+                @include khula-font(400, 16px);
+            }
+    
+            button {
+                align-self: center;
+            }
+        }
+
+        &-active {
+            display: flex;
+        }
     }
 }
 
-@media screen and (max-width: 700px) {
-    .navbar-container {
-        display: flex;
-        justify-content: space-between;
-        min-width: 280px;
-        margin-top: 23px;
-    }
+@media screen and (min-width: 700px) {
+    .navbar {
+        &-container {
+            display: flex;
+            justify-content: space-between;
+            min-width: $minPageWidth;
+            margin-top: 31px;
+        }
 
-    .navbar-links {
-        display: none;
-    }
+        &-logo {
+            padding-left: 23px;
+            a {
+                width: 190px;
+                height: 47px;
+            }
+        }
 
+        &-links {
+            display: flex;
+            justify-content: flex-end;
+            padding: 12px 40px;
+            a {
+                align-self: center;
+                padding-right: 65px;
+                text-decoration: none;
+                @include khula-font(400, 14px);
+            }
+        }
+
+        &-menu {
+            display: none;
+        }
+    }
 }

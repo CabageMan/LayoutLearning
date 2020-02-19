@@ -334,13 +334,14 @@
     &-email-field {
         width: 450px;
         height: 36px;
-        background-color: transparent;
-        border: none;
+        background-color: transparent; 
         padding-bottom: 6px;
         text-align: center;
-        border-bottom-style: solid;
-        border-color: $emailFieldBorderColor;
-        border-width: 1px;
+        border: {
+            style: none  none solid none;
+            color: $emailFieldBorderColor;
+            width: 1px;
+        }
         &, &::placeholder { @include khula-font(400, 16px); }
     }
 }

@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
         <link rel="stylesheet" href="/assets/css/main.css">
         <link rel="icon" type="image/png" href="/assets/images/favicon.png">
@@ -9,13 +10,32 @@
     <body>
         <div class="navbar-container">
             <div class="navbar-logo">
-                <a href="/"><img src="/assets/images/logos/IronChain_logo.svg"></a>
+                <a href="/">
+                    <picture>
+                        <source srcset="/assets/images/logos/small/IronChainLogoSmall.svg" media="(max-width: 700px)">
+                        <source srcset="/assets/images/logos/IronChain_logo.svg">
+                        <img src="/assets/images/logos/IronChain_logo.svg" alt="IronChain">
+                    </picture>
+                </a>
             </div>
             <div class="navbar-links">
                 <a class="center-black" href="/">About</a>
                 <a class="center-black" href="/">Blog</a>
                 <a class="center-black" href="/">Contact Us</a>
                 <button class="empty-small"><i class="button-icon arrow-blue"></i>Get Early Access</button>
+            </div>
+            <div class="navbar-menu">
+                <button id="navbarMenuButton" class="menu-button"><img src="/assets/images/icons/MenuIcon.svg"></button>
+                <div id="navbarMenu" class="navbar-menu-container">
+                    <a class="center-black" href="/">IronChain MiX 10 Gold</a>
+                    <a class="center-black" href="/">IronChain MiX 10 Platinum</a>
+                    <a class="center-black" href="/">MithrilX</a>
+                    <a class="center-black" href="/">About</a>
+                    <a class="center-black" href="/">Privacy Policy</a>
+                    <a class="center-black" href="/">Blog</a>
+                    <a class="center-black" href="/">Contact Us</a>
+                    <button class="empty-extra-large"><i class="button-icon arrow-blue"></i>Get Early Access</button>
+                </div>
             </div>
         </div>
         <div class="column-center-center cryptocurrency-container">
@@ -190,4 +210,5 @@
             </div>
         </div>
     </body>
+    <script src="/assets/js/main.js"></script>
 </html>
