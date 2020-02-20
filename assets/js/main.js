@@ -7,5 +7,8 @@ document.getElementById('navbarMenuButton').addEventListener('click', function(e
 
 function openMenu() {
     let navBarMenu = document.getElementById('navbarMenu');
-    navBarMenu.classList.toggle('navbar-menu-active');
+    let menuButtonImage = document.getElementById('menuButtonImage')
+    
+    navBarMenu.classList.toggle('navbar-menu-shown');
+    menuButtonImage.src = navBarMenu.classList.contains('navbar-menu-shown') ? '/assets/images/icons/CrossIcon.svg' : '/assets/images/icons/MenuIcon.svg';
 }

@@ -19,7 +19,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-end;
-  padding: 5px 20px;
+  padding: 0 20px;
 }
 .navbar-menu-container {
   display: none;
@@ -28,11 +28,13 @@
   align-items: flex-start;
   width: 320px;
   height: 570px;
-  margin-top: 15px;
+  min-width: 320px;
+  margin-top: 30px;
   margin-right: 0;
-  border-style: none solid solid solid;
-  border-color: #979797;
-  border-width: 1px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  position: absolute;
 }
 .navbar-menu-container a {
   margin-left: 70px;
@@ -44,7 +46,7 @@
 .navbar-menu-container button {
   align-self: center;
 }
-.navbar-menu-active {
+.navbar-menu-shown {
   display: flex;
 }
 
