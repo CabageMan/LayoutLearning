@@ -1,81 +1,43 @@
-// Flex styles
-.column-center-center, .column-start-center, .column-space-between-center, .column-space-around-center {
-    display: flex;
-    flex-direction: column;
-}
-
-.column-center-center {
-    justify-content: center;
-    align-items: center;
-}
-
-.row-space-between-start {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.row-wrap-start-start {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-}
-
-.column-start-center {
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.column-space-between-center {
-    justify-content: space-between;
-    align-items: center;
-}
-
-.column-space-around-center {
-    justify-content: space-around;
-    align-items: center;
-}
-
-.row-space-between-center {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-// Text styles
-.center-black {
-    text-align: center;
-    color: black;
-}
-
-.left-black {
-    text-align: left;
-    color: black;
-}
-
-// Blocks Styles
 .cryptocurrency {
     &-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
         width: 100%;
         height: 835px;
     }
 
     &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
         width: $minPageWidth;
         height: 625px;
     }
 
     &-text {
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
         height: 392px;
         padding: {
             left: 122px;
             top: 103px;
         }
 
-        h1 { margin-top: 46px; }
-        p { margin-top: 23px; }
+        h1, p { @include left-black; }
+
+        h1 { 
+            @include khula-font(300, 56px);
+            margin-top: 46px;
+        }
+        p { 
+            @include khula-font(400, 16px);
+            margin-top: 23px;
+        }
 
         form {
             display: flex;
@@ -94,18 +56,22 @@
     }
 
     &-images {
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
         height: inherit;
 
-        .silver-phone {
+        &-phone {
             margin-top: 23px;
             margin-left: 112px;
             width: 348px;
             height: 569px;
-            
-            &-shadow {
-                margin-top: -24px;
-                margin-left: -22px;
-            }
+        }
+
+        &-shadow {
+            margin-top: -24px;
+            margin-left: -22px;
         }
     }
 
@@ -122,17 +88,28 @@
 
 .invest {
     &-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
         flex-wrap: wrap;
         width: 100%;
         height: 900px;
     }
 
-    &-title { 
+    &-title {
         width: 965px;
         margin: 0px;
+        h1 {
+            @include center-black;
+            @include khula-font(300, 56px);
+        }
     }
 
     &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
         width: $minPageWidth;
         height: 410px;
         margin-top: 157px;
@@ -140,19 +117,23 @@
     }
 
     &-images {
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
         width: 530px;
         height: inherit;
 
-        .black-phone {
+        &-phone {
             margin-top: -79px;
             margin-left: 66px;
             width: 348px;
             height: 569px;
-        
-            &-shadow {
-                margin-top: -24px;
-                margin-right: -20px;
-            }
+        }
+
+        &-shadow {
+            margin-top: -24px;
+            margin-right: -20px;
         }
     }
 
@@ -187,6 +168,7 @@
         height: 43px;
         text-align: center;
         color: white;
+        @include khula-font(400, 24px);
         @include background-gradient($numberGradientStartColor, $numberGradientEndColor);
     }
 
@@ -196,18 +178,25 @@
         justify-content: flex-start;
         align-items: flex-start;
         margin-left: 25px;
-        h3 { margin-top: 2px; }
-        p { margin-top: -23px; }
+        h3, p { @include left-black; }
+        h3 { 
+            @include khula-font(400, 24px);
+            margin-top: 2px;
+        }
+        p { 
+            @include khula-font(400, 16px);
+            margin-top: -23px;
+        }
     }
 }
 
 .imac {
     &-container {
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
+        flex-wrap: wrap;
         width: 100%;
         min-width: $minPageWidth;
         height: 889px;
@@ -230,16 +219,21 @@
         width: 630px;
         height: 545px;
         h1 {
+            @include khula-font(300, 56px);
             color: white;
             height: 79px;
         }
         p {
+            @include khula-font(400, 16px);
             color: white;
             height: 56px;
         }
     }
 
     &-logos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 488px;
         height: 125px;
     }
@@ -267,66 +261,126 @@
 
 .advantages {
     &-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
         flex-wrap: wrap;
         width: 100%;
     }
 
     &-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 965px;
         height: 429px;
-        h1 { margin-top: 148px; }
+        h1 { 
+            @include center-black;
+            @include khula-font(300, 56px);
+            margin-top: 148px;
+        }
     }
 
     &-content {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-around;
         align-content: space-around;
+        flex-wrap: wrap;
         width: $minPageWidth;
         height: 532px;
         background-color: $sectionBBackgroundColor;
     }
 
     &-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 426px;
         height: 266px;
-        h3 { margin-top: 28px; }
-        p { margin-top: -23px; }
+        h3, p { @include center-black; }
+        h3 {
+            @include khula-font(600, 20px);
+            margin-top: 28px;
+        }
+        p {
+            @include khula-font(400, 16px);
+            margin-top: -23px;
+        }
     }
 }
 
 .about {
     &-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
         flex-wrap: wrap;
         width: 100%;
         height: 1623px;
     }
 
     &-us {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         width: 1192px;
         height: 208px;
-        h2 { height: 112px; }
+        h2 { 
+            @include center-black;
+            @include khula-font(300, 34px);
+            height: 112px;
+        }
     }
 
     &-our-partners {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         width: 883px;
         height: 230px;
-        h1 { height: 60px; }
-        p { height: 56px; }
+        h1, p { @include center-black; }
+        h1 { 
+            @include khula-font(300, 46px);
+            height: 60px;
+        }
+        p {
+            @include khula-font(400, 16px);
+            height: 56px;
+        }
     }
 
     &-subscribe {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         width: 450px;
         height: 164px;
-        h2 { height: 56px; }
+        h2 { 
+            @include center-black;
+            @include khula-font(300, 34px);
+            height: 56px;
+        }
     }
 
     &-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 407px;
         height: 56px;
     }
 
     &-logos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 623px;
         height: 66px;
     }
@@ -348,6 +402,10 @@
 
 .footer {
     &-container { 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
         flex-wrap: wrap;
         width: 100%;
         height: 1413px;
@@ -364,15 +422,22 @@
     }
 
     &-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 422px;
         height: 19px;
         a {
+            @include khula-font(400, 14px);
             text-decoration: none;
             color: $footerLinksColor;
         }
     }
 
     &-social-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 118px;
         height: 19px;
         a {
@@ -404,6 +469,7 @@
     }
 
     &-text {
+        @include khula-font(400, 14px);
         color: $footerTextColor;
         width: 407px;
         p {
@@ -419,14 +485,6 @@
     }
 }
 
-// @media screen and (min-width: 1320px) {
-//     .cryptocurrency-content {
-//         max-width: $minPageWidth;
-//     }    
-// }
-
-@media screen and (max-width: 700px) {
-    .list-number {   
-        @include background-gradient(yellowgreen, green);
-    }
+@media screen and (min-width: 700px) {
+    
 }

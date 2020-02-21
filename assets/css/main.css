@@ -39,7 +39,7 @@
 .navbar-menu-container a {
   margin-left: 70px;
   text-decoration: none;
-  font-family: Khula;
+  font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
@@ -73,7 +73,7 @@
     align-self: center;
     padding-right: 65px;
     text-decoration: none;
-    font-family: Khula;
+    font-family: Khula, Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 14px;
   }
@@ -118,43 +118,43 @@
   font-style: normal;
 }
 .khula-light-small {
-  font-family: Khula;
+  font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 34px;
 }
 
 .khula-light-middle {
-  font-family: Khula;
+  font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 46px;
 }
 
 .khula-light-large {
-  font-family: Khula;
+  font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 56px;
 }
 
 .khula-regular-small {
-  font-family: Khula;
+  font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
 }
 
 .khula-regular-middle {
-  font-family: Khula;
+  font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
 
 .khula-regular-large {
-  font-family: Khula;
+  font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 24px;
 }
 
 .khula-semibold {
-  font-family: Khula;
+  font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
@@ -248,6 +248,11 @@
   background-image: url("/assets/images/icons/BlueArrow.svg");
 }
 
+@media screen and (max-width: 700px) {
+  .filled-large {
+    width: 280px;
+  }
+}
 .column-center-center, .column-start-center, .column-space-between-center, .column-space-around-center {
   display: flex;
   flex-direction: column;
@@ -303,23 +308,44 @@
 }
 
 .cryptocurrency-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   width: 100%;
   height: 835px;
 }
 .cryptocurrency-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   width: 1280px;
   height: 625px;
 }
 .cryptocurrency-text {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
   height: 392px;
   padding-left: 122px;
   padding-top: 103px;
 }
+.cryptocurrency-text h1, .cryptocurrency-text p {
+  text-align: left;
+  color: black;
+}
 .cryptocurrency-text h1 {
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 56px;
   margin-top: 46px;
 }
 .cryptocurrency-text p {
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   margin-top: 23px;
 }
 .cryptocurrency-text form {
@@ -335,20 +361,24 @@
   padding: 0 20px;
 }
 .cryptocurrency-text input, .cryptocurrency-text input::placeholder {
-  font-family: Khula;
+  font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
 .cryptocurrency-images {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
   height: inherit;
 }
-.cryptocurrency-images .silver-phone {
+.cryptocurrency-images-phone {
   margin-top: 23px;
   margin-left: 112px;
   width: 348px;
   height: 569px;
 }
-.cryptocurrency-images .silver-phone-shadow {
+.cryptocurrency-images-shadow {
   margin-top: -24px;
   margin-left: -22px;
 }
@@ -361,6 +391,10 @@
 }
 
 .invest-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   width: 100%;
   height: 900px;
@@ -369,23 +403,37 @@
   width: 965px;
   margin: 0px;
 }
+.invest-title h1 {
+  text-align: center;
+  color: black;
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 56px;
+}
 .invest-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   width: 1280px;
   height: 410px;
   margin-top: 157px;
   background-color: #f7f7f7;
 }
 .invest-images {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
   width: 530px;
   height: inherit;
 }
-.invest-images .black-phone {
+.invest-images-phone {
   margin-top: -79px;
   margin-left: 66px;
   width: 348px;
   height: 569px;
 }
-.invest-images .black-phone-shadow {
+.invest-images-shadow {
   margin-top: -24px;
   margin-right: -20px;
 }
@@ -416,6 +464,9 @@
   height: 43px;
   text-align: center;
   color: white;
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
   background-image: linear-gradient(to top right, #559dff, #377cff);
 }
 .list-content {
@@ -425,19 +476,29 @@
   align-items: flex-start;
   margin-left: 25px;
 }
+.list-content h3, .list-content p {
+  text-align: left;
+  color: black;
+}
 .list-content h3 {
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
   margin-top: 2px;
 }
 .list-content p {
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   margin-top: -23px;
 }
 
 .imac-container {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  flex-wrap: wrap;
   width: 100%;
   min-width: 1280px;
   height: 889px;
@@ -459,14 +520,23 @@
   height: 545px;
 }
 .imac-text h1 {
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 56px;
   color: white;
   height: 79px;
 }
 .imac-text p {
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   color: white;
   height: 56px;
 }
 .imac-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 488px;
   height: 125px;
 }
@@ -489,70 +559,139 @@
 }
 
 .advantages-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
   width: 100%;
 }
 .advantages-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 965px;
   height: 429px;
 }
 .advantages-title h1 {
+  text-align: center;
+  color: black;
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 56px;
   margin-top: 148px;
 }
 .advantages-content {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-around;
+  flex-wrap: wrap;
   width: 1280px;
   height: 532px;
   background-color: #f7f7f7;
 }
 .advantages-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 426px;
   height: 266px;
 }
+.advantages-item h3, .advantages-item p {
+  text-align: center;
+  color: black;
+}
 .advantages-item h3 {
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
   margin-top: 28px;
 }
 .advantages-item p {
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   margin-top: -23px;
 }
 
 .about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
   width: 100%;
   height: 1623px;
 }
 .about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 1192px;
   height: 208px;
 }
 .about-us h2 {
+  text-align: center;
+  color: black;
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 34px;
   height: 112px;
 }
 .about-our-partners {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 883px;
   height: 230px;
 }
+.about-our-partners h1, .about-our-partners p {
+  text-align: center;
+  color: black;
+}
 .about-our-partners h1 {
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 46px;
   height: 60px;
 }
 .about-our-partners p {
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   height: 56px;
 }
 .about-subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 450px;
   height: 164px;
 }
 .about-subscribe h2 {
+  text-align: center;
+  color: black;
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 34px;
   height: 56px;
 }
 .about-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 407px;
   height: 56px;
 }
 .about-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 623px;
   height: 66px;
 }
@@ -567,12 +706,16 @@
   border-width: 1px;
 }
 .about-email-field, .about-email-field::placeholder {
-  font-family: Khula;
+  font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
 
 .footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   width: 100%;
   height: 1413px;
@@ -587,14 +730,23 @@
   height: 100px;
 }
 .footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 422px;
   height: 19px;
 }
 .footer-links a {
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
   text-decoration: none;
   color: #001833;
 }
 .footer-social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 118px;
   height: 19px;
 }
@@ -631,6 +783,9 @@
   width: 844px;
 }
 .footer-text {
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
   color: #959595;
   width: 407px;
 }
@@ -645,11 +800,6 @@
   text-decoration: underline;
 }
 
-@media screen and (max-width: 700px) {
-  .list-number {
-    background-image: linear-gradient(to top right, yellowgreen, green);
-  }
-}
 body, html {
   width: 100%;
   margin: 0;

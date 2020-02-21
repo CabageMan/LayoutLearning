@@ -1,10 +1,21 @@
 // Fonts
 @mixin khula-font($weight, $size) {
     font: {
-        family: Khula;
+        family: Khula, Helvetica, Arial, sans-serif;
         weight: $weight;
         size: $size;
     }
+}
+
+// Text
+@mixin left-black {
+    text-align: left;
+    color: black;
+}
+
+@mixin center-black {
+    text-align: center;
+    color: black;
 }
 
 // Gradient
