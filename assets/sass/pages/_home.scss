@@ -1,490 +1,403 @@
-.cryptocurrency {
-    &-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 835px;
-    }
-
-    &-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        width: $minPageWidth;
-        height: 625px;
-    }
-
-    &-text {
-        display: flex;
-        justify-content: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
-        height: 392px;
-        padding: {
-            left: 122px;
-            top: 103px;
-        }
-
-        h1, p { @include left-black; }
-
-        h1 { 
-            @include khula-font(300, 56px);
-            margin-top: 46px;
-        }
-        p { 
-            @include khula-font(400, 16px);
-            margin-top: 23px;
-        }
-
-        form {
+@media screen and (min-width: 700px) {
+    .cryptocurrency {
+        &-container {
             display: flex;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            margin-top: 37px;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 835px;
         }
-
-        input {
-            width: 348px;
+    
+        &-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: $minPageWidth;
+            height: 625px;
+        }
+    
+        &-text {
+            display: flex;
+            justify-content: flex-start;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            height: 392px;
+            padding: {
+                left: 122px;
+                top: 103px;
+            }
+    
+            h1, p { @include left-black; }
+    
+            h1 { 
+                @include khula-font(300, 56px);
+                margin-top: 46px;
+            }
+            p { 
+                @include khula-font(400, 16px);
+                margin-top: 23px;
+            }
+    
+            form {
+                display: flex;
+                align-items: center;
+                margin-top: 37px;
+            }
+    
+            input {
+                width: 348px;
+                height: 56px;
+                background-color: $inputBackGroundColor;
+                border: none;
+                padding: 0 20px;
+                &, &::placeholder { @include khula-font(400, 16px); }
+            }
+        }
+    
+        &-images {
+            display: flex;
+            justify-content: flex-start;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            height: inherit;
+    
+            &-phone {
+                margin-top: 23px;
+                margin-left: 112px;
+                width: 348px;
+                height: 569px;
+            }
+    
+            &-shadow {
+                margin-top: -24px;
+                margin-left: -22px;
+            }
+        }
+    
+        &-divider {
+            hr {
+                margin-top: 83px;
+                width: 342px;
+                height: 2px;
+                background-color: $dividerColor;
+                border: none;
+            }
+        }
+    }
+    
+    .invest {
+        &-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 900px;
+        }
+    
+        &-title {
+            width: 965px;
+            margin: 0px;
+            h1 {
+                @include center-black;
+                @include khula-font(300, 56px);
+            }
+        }
+    
+        &-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: $minPageWidth;
+            height: 410px;
+            margin-top: 157px;
+            background-color: $sectionBBackgroundColor;
+        }
+    
+        &-images {
+            display: flex;
+            justify-content: flex-start;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            width: 530px;
+            height: inherit;
+    
+            &-phone {
+                margin-top: -79px;
+                margin-left: 66px;
+                width: 348px;
+                height: 569px;
+            }
+    
+            &-shadow {
+                margin-top: -24px;
+                margin-right: -20px;
+            }
+        }
+    
+        &-text {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-content: flex-start;
+            width: 750px;
+            height: inherit;
+        }
+    
+        &-button {
+            align-self: flex-end;
+            margin-bottom: -142px;
+        }
+    }
+    
+    .list {
+        &-item {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+        }
+    
+        &-number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 43px;
+            height: 43px;
+            text-align: center;
+            color: white;
+            @include khula-font(400, 24px);
+            @include background-gradient($numberGradientStartColor, $numberGradientEndColor);
+        }
+    
+        &-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-left: 25px;
+            h3, p { @include left-black; }
+            h3 { 
+                @include khula-font(400, 24px);
+                margin-top: 2px;
+            }
+            p { 
+                @include khula-font(400, 16px);
+                margin-top: -23px;
+            }
+        }
+    }
+    
+    .imac {
+        &-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            width: 100%;
+            min-width: $minPageWidth;
+            height: 889px;
+            margin-top: 229px;
+            @include background-gradient($backgroundGradientStartColor, $backgroundGradientEndColor);
+        }
+    
+        &-content {
+            display: flex;
+            justify-content: flex-end;
+            width: $minPageWidth;
+            height: 660px;
+        }
+    
+        &-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 630px;
+            height: 545px;
+            h1 {
+                @include khula-font(300, 56px);
+                color: white;
+                height: 79px;
+            }
+            p {
+                @include khula-font(400, 16px);
+                color: white;
+                height: 56px;
+            }
+        }
+    
+        &-logos {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 488px;
+            height: 125px;
+        }
+    
+        &-images {
+            display: flex;
+            width: 689px;
+            height: inherit;
+            overflow: hidden;
+    
+            &-lock {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
+                width: 92px;
+            }
+    
+            &-imac {
+                display: flex;
+                justify-content: flex-start;
+                width: 598px;
+            }
+        }
+    }
+    
+    .advantages {
+        &-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+    
+        &-title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 965px;
+            height: 429px;
+            h1 { 
+                @include center-black;
+                @include khula-font(300, 56px);
+                margin-top: 148px;
+            }
+        }
+    
+        &-content {
+            display: flex;
+            justify-content: space-around;
+            align-content: space-around;
+            flex-wrap: wrap;
+            width: $minPageWidth;
+            height: 532px;
+            background-color: $sectionBBackgroundColor;
+        }
+    
+        &-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 426px;
+            height: 266px;
+            h3, p { @include center-black; }
+            h3 {
+                @include khula-font(600, 20px);
+                margin-top: 28px;
+            }
+            p {
+                @include khula-font(400, 16px);
+                margin-top: -23px;
+            }
+        }
+    }
+    
+    .about {
+        &-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 1623px;
+        }
+    
+        &-us {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 1192px;
+            height: 208px;
+            h2 { 
+                @include center-black;
+                @include khula-font(300, 34px);
+                height: 112px;
+            }
+        }
+    
+        &-our-partners {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 883px;
+            height: 230px;
+            h1, p { @include center-black; }
+            h1 { 
+                @include khula-font(300, 46px);
+                height: 60px;
+            }
+            p {
+                @include khula-font(400, 16px);
+                height: 56px;
+            }
+        }
+    
+        &-subscribe {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 450px;
+            height: 164px;
+            h2 { 
+                @include center-black;
+                @include khula-font(300, 34px);
+                height: 56px;
+            }
+        }
+    
+        &-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 407px;
             height: 56px;
-            background-color: $inputBackGroundColor;
-            border: none;
-            padding: 0 20px;
+        }
+    
+        &-logos {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 623px;
+            height: 66px;
+        }
+    
+        &-email-field {
+            width: 450px;
+            height: 36px;
+            background-color: transparent; 
+            padding-bottom: 6px;
+            text-align: center;
+            border: {
+                style: none  none solid none;
+                color: $emailFieldBorderColor;
+                width: 1px;
+            }
             &, &::placeholder { @include khula-font(400, 16px); }
         }
-    }
-
-    &-images {
-        display: flex;
-        justify-content: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
-        height: inherit;
-
-        &-phone {
-            margin-top: 23px;
-            margin-left: 112px;
-            width: 348px;
-            height: 569px;
-        }
-
-        &-shadow {
-            margin-top: -24px;
-            margin-left: -22px;
-        }
-    }
-
-    &-divider {
-        hr {
-            margin-top: 83px;
-            width: 342px;
-            height: 2px;
-            background-color: $dividerColor;
-            border: none;
-        }
-    }
-}
-
-.invest {
-    &-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 900px;
-    }
-
-    &-title {
-        width: 965px;
-        margin: 0px;
-        h1 {
-            @include center-black;
-            @include khula-font(300, 56px);
-        }
-    }
-
-    &-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        width: $minPageWidth;
-        height: 410px;
-        margin-top: 157px;
-        background-color: $sectionBBackgroundColor;
-    }
-
-    &-images {
-        display: flex;
-        justify-content: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
-        width: 530px;
-        height: inherit;
-
-        &-phone {
-            margin-top: -79px;
-            margin-left: 66px;
-            width: 348px;
-            height: 569px;
-        }
-
-        &-shadow {
-            margin-top: -24px;
-            margin-right: -20px;
-        }
-    }
-
-    &-text {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-content: flex-start;
-        width: 750px;
-        height: inherit;
-    }
-
-    &-button {
-        align-self: flex-end;
-        margin-bottom: -142px;
-    }
-}
-
-.list {
-    &-item {
-        display: flex;
-        justify-content: flex-start;
-        width: 100%;
-    }
-
-    &-number {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 43px;
-        height: 43px;
-        text-align: center;
-        color: white;
-        @include khula-font(400, 24px);
-        @include background-gradient($numberGradientStartColor, $numberGradientEndColor);
-    }
-
-    &-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-left: 25px;
-        h3, p { @include left-black; }
-        h3 { 
-            @include khula-font(400, 24px);
-            margin-top: 2px;
-        }
-        p { 
-            @include khula-font(400, 16px);
-            margin-top: -23px;
-        }
-    }
-}
-
-.imac {
-    &-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-        flex-wrap: wrap;
-        width: 100%;
-        min-width: $minPageWidth;
-        height: 889px;
-        margin-top: 229px;
-        @include background-gradient($backgroundGradientStartColor, $backgroundGradientEndColor);
-    }
-
-    &-content {
-        display: flex;
-        justify-content: flex-end;
-        width: $minPageWidth;
-        height: 660px;
-    }
-
-    &-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        width: 630px;
-        height: 545px;
-        h1 {
-            @include khula-font(300, 56px);
-            color: white;
-            height: 79px;
-        }
-        p {
-            @include khula-font(400, 16px);
-            color: white;
-            height: 56px;
-        }
-    }
-
-    &-logos {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 488px;
-        height: 125px;
-    }
-
-    &-images {
-        display: flex;
-        width: 689px;
-        height: inherit;
-        overflow: hidden;
-
-        &-lock {
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-end;
-            width: 92px;
-        }
-
-        &-imac {
-            display: flex;
-            justify-content: flex-start;
-            width: 598px;
-        }
-    }
-}
-
-.advantages {
-    &-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    &-title {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 965px;
-        height: 429px;
-        h1 { 
-            @include center-black;
-            @include khula-font(300, 56px);
-            margin-top: 148px;
-        }
-    }
-
-    &-content {
-        display: flex;
-        justify-content: space-around;
-        align-content: space-around;
-        flex-wrap: wrap;
-        width: $minPageWidth;
-        height: 532px;
-        background-color: $sectionBBackgroundColor;
-    }
-
-    &-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 426px;
-        height: 266px;
-        h3, p { @include center-black; }
-        h3 {
-            @include khula-font(600, 20px);
-            margin-top: 28px;
-        }
-        p {
-            @include khula-font(400, 16px);
-            margin-top: -23px;
-        }
-    }
-}
-
-.about {
-    &-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 1623px;
-    }
-
-    &-us {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 1192px;
-        height: 208px;
-        h2 { 
-            @include center-black;
-            @include khula-font(300, 34px);
-            height: 112px;
-        }
-    }
-
-    &-our-partners {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 883px;
-        height: 230px;
-        h1, p { @include center-black; }
-        h1 { 
-            @include khula-font(300, 46px);
-            height: 60px;
-        }
-        p {
-            @include khula-font(400, 16px);
-            height: 56px;
-        }
-    }
-
-    &-subscribe {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 450px;
-        height: 164px;
-        h2 { 
-            @include center-black;
-            @include khula-font(300, 34px);
-            height: 56px;
-        }
-    }
-
-    &-buttons {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 407px;
-        height: 56px;
-    }
-
-    &-logos {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 623px;
-        height: 66px;
-    }
-
-    &-email-field {
-        width: 450px;
-        height: 36px;
-        background-color: transparent; 
-        padding-bottom: 6px;
-        text-align: center;
-        border: {
-            style: none  none solid none;
-            color: $emailFieldBorderColor;
-            width: 1px;
-        }
-        &, &::placeholder { @include khula-font(400, 16px); }
-    }
-}
-
-.footer {
-    &-container { 
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 1413px;
-        min-width: $minPageWidth;
-        background-color: $footerBackGroundColor;
-    }
-
-    &-navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        width: 844px;
-        height: 100px;
-    }
-
-    &-links {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 422px;
-        height: 19px;
-        a {
-            @include khula-font(400, 14px);
-            text-decoration: none;
-            color: $footerLinksColor;
-        }
-    }
-
-    &-social-links {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 118px;
-        height: 19px;
-        a {
-            background-repeat: no-repeat;
-            &:hover { opacity: 0.5; }
-            &.twitter { background-image: url("/assets/images/TwitterLogo.svg"); }
-            &.facebook { background-image: url("/assets/images/FaceBookLogo.svg"); }
-            &.m { background-image: url("/assets/images/MLogo.svg"); }
-        }
-    }
-
-    &-title {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        width: 844px;
-        height: 145px;
-        p {
-            color: $footerTextColor;
-            text-align: center;
-            height: 52px;
-        }
-    }
-
-    &-content {
-        display: flex;
-        justify-content: space-between;
-        width: 844px;
-    }
-
-    &-text {
-        @include khula-font(400, 14px);
-        color: $footerTextColor;
-        width: 407px;
-        p {
-            text-align: justify;
-            text-indent: 50px;
-            line-height: 26px;
-            letter-spacing: 0.5px;
-        }
-        a {
-            color: $footerTextColor;
-            text-decoration: underline;
-        }
-    }
-}
-
-@media screen and (min-width: 700px) {
-    
+    }   
 }

@@ -39,12 +39,3 @@
     font-weight: 400;
     font-style: normal;
 }
-
-// Fonts Styles
-.khula-light-small { @include khula-font(300, 34px); }
-.khula-light-middle { @include khula-font(300, 46px); }
-.khula-light-large { @include khula-font(300, 56px); }
-.khula-regular-small { @include khula-font(400, 14px); }
-.khula-regular-middle { @include khula-font(400, 16px); }
-.khula-regular-large { @include khula-font(400, 24px); }
-.khula-semibold { @include khula-font(600, 20px); }
