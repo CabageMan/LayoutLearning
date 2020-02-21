@@ -445,6 +445,96 @@
   display: none;
 }
 
+.invest-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 900px;
+}
+.invest-title {
+  width: 280px;
+  height: 160px;
+  margin: 0;
+}
+.invest-title h1 {
+  text-align: center;
+  color: black;
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 29px;
+  margin-top: -3px;
+}
+.invest-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 280px;
+  height: 693px;
+}
+.invest-images {
+  display: none;
+}
+.invest-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 296px;
+  height: 574px;
+}
+.invest-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+  height: 148px;
+}
+.invest-list-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43px;
+  height: 43px;
+  text-align: center;
+  color: white;
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  background-image: linear-gradient(to top right, #559dff, #377cff);
+}
+.invest-list-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: inherit;
+  height: 77px;
+}
+.invest-list-content h3, .invest-list-content p {
+  text-align: center;
+  color: black;
+}
+.invest-list-content h3 {
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin: 0px;
+}
+.invest-list-content p {
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0px;
+}
+.invest-button {
+  display: none;
+}
+
 @media screen and (min-width: 700px) {
   .cryptocurrency-container {
     justify-content: center;
@@ -526,7 +616,7 @@
   }
   .invest-title {
     width: 965px;
-    margin: 0px;
+    margin: 0;
   }
   .invest-title h1 {
     text-align: center;
@@ -537,6 +627,7 @@
   }
   .invest-content {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     width: 1280px;
@@ -564,24 +655,24 @@
   }
   .invest-text {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: flex-start;
     align-content: flex-start;
+    flex-wrap: wrap;
     width: 750px;
     height: inherit;
+    margin-top: -13px;
   }
-  .invest-button {
-    align-self: flex-end;
-    margin-bottom: -142px;
-  }
-
-  .list-item {
+  .invest-list-item {
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
-    width: 100%;
+    align-items: flex-start;
+    width: inherit;
+    height: 55px;
   }
-  .list-number {
+  .invest-list-number {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -594,28 +685,35 @@
     font-size: 24px;
     background-image: linear-gradient(to top right, #559dff, #377cff);
   }
-  .list-content {
+  .invest-list-content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
+    align-self: flex-end;
+    height: 55px;
     margin-left: 25px;
   }
-  .list-content h3, .list-content p {
+  .invest-list-content h3, .invest-list-content p {
     text-align: left;
     color: black;
   }
-  .list-content h3 {
+  .invest-list-content h3 {
     font-family: Khula, Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 24px;
     margin-top: 2px;
   }
-  .list-content p {
+  .invest-list-content p {
     font-family: Khula, Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 16px;
     margin-top: -23px;
+  }
+  .invest-button {
+    display: initial;
+    align-self: flex-end;
+    margin-bottom: -142px;
   }
 
   .imac-container {
