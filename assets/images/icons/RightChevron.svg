@@ -3,11 +3,9 @@
     <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
     <title></title>
     <desc>Created with Sketch.</desc>
-    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="icofont, IcoFont" font-size="40" font-weight="normal">
-        <g id="01" transform="translate(-1182.000000, -3506.000000)" fill="#61AAFF">
-            <text id="">
-                <tspan x="1180" y="3538"></tspan>
-            </text>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01" transform="translate(-1182.000000, -3506.000000)" fill="#61AAFF" fill-rule="nonzero">
+            <path d="M1192.6,3535.32 L1204.28,3524 L1192.6,3512.68 L1194.12,3511.12 L1207.4,3524 L1194.12,3536.92 L1192.6,3535.32 Z M1182.48,3506.48 L1217.52,3506.48 L1217.52,3541.52 L1182.48,3541.52 L1182.48,3506.48 Z M1216.24,3540.24 L1216.24,3507.76 L1183.76,3507.76 L1183.76,3540.24 L1216.24,3540.24 Z" id=""></path>
         </g>
     </g>
 </svg>

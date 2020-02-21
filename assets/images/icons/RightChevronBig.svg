@@ -3,12 +3,10 @@
     <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
     <title></title>
     <desc>Created with Sketch.</desc>
-    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="icofont, IcoFont" font-size="60" font-weight="normal">
-        <g id="02" transform="translate(-132.000000, -3677.000000)" fill="#61AAFF">
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02" transform="translate(-132.000000, -3677.000000)" fill="#61AAFF" fill-rule="nonzero">
             <g id="Group-3" transform="translate(40.000000, 3674.000000)">
-                <text id="">
-                    <tspan x="89" y="51"></tspan>
-                </text>
+                <path d="M107.9,46.98 L125.42,30 L107.9,13.02 L110.18,10.68 L130.1,30 L110.18,49.38 L107.9,46.98 Z M92.72,3.72 L145.28,3.72 L145.28,56.28 L92.72,56.28 L92.72,3.72 Z M143.36,54.36 L143.36,5.64 L94.64,5.64 L94.64,54.36 L143.36,54.36 Z" id=""></path>
             </g>
         </g>
     </g>
