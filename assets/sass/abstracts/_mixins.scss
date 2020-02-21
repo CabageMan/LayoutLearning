@@ -35,11 +35,7 @@
         align: center;
         decoration: none;
     }
-    font: {
-        family: Khula;
-        weight: 600;
-        size: 16px;
-    }
+    @include khula-font(600, 16px);
 }
 
 @mixin bordered($color) {

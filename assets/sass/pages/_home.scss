@@ -1,17 +1,96 @@
+.cryptocurrency {
+    &-container, &-text, &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-container, &-text {
+        justify-content: flex-start;
+    }
+
+    &-container {
+        flex-wrap: wrap;
+        width: 100%;
+        height: 987px;
+    }
+
+    &-content {
+        justify-content: space-around;
+        width: $mobileMinPageWidth;
+        height: inherit;
+    }
+    
+    &-text {
+        height: 427px;
+
+        h1, p { @include center-black; }
+
+        h1 { 
+            @include khula-font(300, 32px);
+            margin-top: 37px;
+        }
+        p { 
+            @include khula-font(400, 14px);
+            margin: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            align-self: flex-end;
+            height: 129px;
+            margin-top: 42px;
+        }
+
+        input {
+            width: $mobileMinPageWidth;
+            height: 56px;
+            background-color: $inputBackGroundColor;
+            border: none;
+            padding: 0;
+            margin: 0;
+            &, &::placeholder { 
+                @include khula-font(400, 16px);
+                text-align: center;
+            }
+        }
+    }
+
+    &-images {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        height: 560px;
+
+        &-phone {
+            margin: -88px 0 0 62px;
+            width: 879px;
+            height: 720px;
+            z-index: 0;
+        }
+
+        &-shadow {
+            display: none;
+        }
+    }
+
+    &-divider {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 700px) {
     .cryptocurrency {
         &-container {
-            display: flex;
-            flex-direction: column;
             justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            width: 100%;
             height: 835px;
         }
     
         &-content {
-            display: flex;
+            flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
             width: $minPageWidth;
@@ -19,15 +98,11 @@
         }
     
         &-text {
-            display: flex;
-            justify-content: flex-start;
+            flex-direction: row;
             align-content: flex-start;
             flex-wrap: wrap;
             height: 392px;
-            padding: {
-                left: 122px;
-                top: 103px;
-            }
+            padding: 103px 0 0 122px;
     
             h1, p { @include left-black; }
     
@@ -41,38 +116,33 @@
             }
     
             form {
-                display: flex;
-                align-items: center;
+                flex-direction: row;
+                justify-content: flex-start;
                 margin-top: 37px;
             }
     
             input {
                 width: 348px;
-                height: 56px;
-                background-color: $inputBackGroundColor;
-                border: none;
                 padding: 0 20px;
-                &, &::placeholder { @include khula-font(400, 16px); }
+                &, &::placeholder { text-align: left; }
             }
         }
     
         &-images {
-            display: flex;
             justify-content: flex-start;
             align-content: flex-start;
             flex-wrap: wrap;
             height: inherit;
     
             &-phone {
-                margin-top: 23px;
-                margin-left: 112px;
+                margin: 23px 0 0 112px;
                 width: 348px;
                 height: 569px;
             }
     
             &-shadow {
-                margin-top: -24px;
-                margin-left: -22px;
+                display: initial;
+                margin: -24px 0 0 -22px;
             }
         }
     
