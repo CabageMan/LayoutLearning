@@ -606,6 +606,59 @@
   justify-content: center;
 }
 
+.advantages-container, .advantages-title, .advantages-content, .advantages-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.advantages-container, .advantages-content {
+  justify-content: space-between;
+}
+.advantages-container {
+  flex-wrap: wrap;
+  width: 100%;
+  height: 1744px;
+}
+.advantages-title {
+  justify-content: flex-end;
+  width: 280px;
+  height: 249px;
+}
+.advantages-title h1 {
+  text-align: center;
+  color: black;
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  height: 160px;
+  margin: 0;
+}
+.advantages-content {
+  width: 280px;
+  height: 1379px;
+}
+.advantages-item {
+  justify-content: flex-start;
+  width: 280px;
+  height: 154px;
+}
+.advantages-item h3, .advantages-item p {
+  text-align: center;
+  color: black;
+}
+.advantages-item h3 {
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 21px;
+}
+.advantages-item p {
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: -20px;
+}
+
 @media screen and (min-width: 700px) {
   .cryptocurrency-container {
     justify-content: center;
@@ -831,32 +884,21 @@
   }
 
   .advantages-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
+    height: 962px;
   }
   .advantages-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 965px;
-    height: 429px;
+    height: 354px;
   }
   .advantages-title h1 {
-    text-align: center;
-    color: black;
     font-family: Khula, Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 56px;
-    margin-top: 148px;
   }
   .advantages-content {
-    display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: flex-start;
     align-content: space-around;
     flex-wrap: wrap;
     width: 1280px;
@@ -864,28 +906,9 @@
     background-color: #f7f7f7;
   }
   .advantages-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     width: 426px;
-    height: 266px;
-  }
-  .advantages-item h3, .advantages-item p {
-    text-align: center;
-    color: black;
-  }
-  .advantages-item h3 {
-    font-family: Khula, Helvetica, Arial, sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    margin-top: 28px;
-  }
-  .advantages-item p {
-    font-family: Khula, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    margin-top: -23px;
+    height: 142px;
   }
 
   .about-container {

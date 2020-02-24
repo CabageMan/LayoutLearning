@@ -253,6 +253,56 @@
     }
 }
 
+.advantages {
+    &-container, &-title, &-content, &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-container, &-content {
+        justify-content: space-between;
+    }
+
+    &-container {
+        flex-wrap: wrap;
+        width: 100%;
+        height: 1744px;
+    }
+
+    &-title {
+        justify-content: flex-end;
+        width: $mobileMinPageWidth;
+        height: 249px;
+
+        h1 {
+            @include center-black;
+            @include khula-font(300, 32px);
+            height: 160px;
+            margin: 0;
+        }
+    }
+
+    &-content {
+        width: $mobileMinPageWidth;
+        height: 1379px;
+    }
+
+    &-item {
+        justify-content: flex-start;
+        width: $mobileMinPageWidth;
+        height: 154px;
+        h3, p { @include center-black; }
+        h3 {
+            @include khula-font(600, 20px);
+            margin-top: 21px;
+        }
+        p {
+            @include khula-font(400, 16px);
+            margin-top: -20px;
+        }
+    }
+}
 
 @media screen and (min-width: 700px) {
     .cryptocurrency {
@@ -500,31 +550,21 @@
     
     .advantages {
         &-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-            width: 100%;
+            height: 962px;
         }
     
         &-title {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             width: 965px;
-            height: 429px;
+            height: 354px;
             h1 { 
-                @include center-black;
                 @include khula-font(300, 56px);
-                margin-top: 148px;
             }
         }
     
         &-content {
-            display: flex;
+            flex-direction: row;
             justify-content: space-around;
+            align-items: flex-start;
             align-content: space-around;
             flex-wrap: wrap;
             width: $minPageWidth;
@@ -533,21 +573,9 @@
         }
     
         &-item {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            justify-content: space-between;
             width: 426px;
-            height: 266px;
-            h3, p { @include center-black; }
-            h3 {
-                @include khula-font(600, 20px);
-                margin-top: 28px;
-            }
-            p {
-                @include khula-font(400, 16px);
-                margin-top: -23px;
-            }
+            height: 142px;
         }
     }
     
