@@ -18,6 +18,16 @@
     color: black;
 }
 
+@mixin left-white {
+    text-align: left;
+    color: white;
+}
+
+@mixin center-white {
+    text-align: center;
+    color: white;
+}
+
 // Gradient
 @mixin background-gradient($startColor, $endColor) {
     background-image:

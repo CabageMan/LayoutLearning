@@ -445,11 +445,18 @@
   display: none;
 }
 
-.invest-container {
+.invest-container, .invest-text, .invest-content, .invest-list-item, .invest-list-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+}
+.invest-container, .invest-text, .invest-list-item {
+  justify-content: space-between;
+}
+.invest-content, .invest-list-content {
+  justify-content: flex-start;
+}
+.invest-container {
   flex-wrap: wrap;
   width: 100%;
   height: 900px;
@@ -468,10 +475,6 @@
   margin-top: -3px;
 }
 .invest-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
   width: 280px;
   height: 693px;
 }
@@ -479,18 +482,10 @@
   display: none;
 }
 .invest-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   width: 296px;
   height: 574px;
 }
 .invest-list-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   width: inherit;
   height: 148px;
 }
@@ -508,10 +503,6 @@
   background-image: linear-gradient(to top right, #559dff, #377cff);
 }
 .invest-list-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
   width: inherit;
   height: 77px;
 }
@@ -533,6 +524,86 @@
 }
 .invest-button {
   display: none;
+}
+
+.imac-container, .imac-content, .imac-text {
+  display: flex;
+  flex-direction: column;
+}
+.imac-content, .imac-text, .imac-logos {
+  justify-content: space-between;
+  align-items: center;
+}
+.imac-container {
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 813px;
+  min-width: 280px;
+  margin: 0;
+  background-image: linear-gradient(to top right, #61aaff, #2a6dff);
+}
+.imac-content {
+  width: 280px;
+  height: 696px;
+}
+.imac-text {
+  width: 280px;
+  height: 328px;
+}
+.imac-text h1, .imac-text p {
+  text-align: center;
+  color: white;
+}
+.imac-text h1 {
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  height: 80px;
+}
+.imac-text p {
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  height: 66px;
+}
+.imac-logos {
+  display: flex;
+  width: 274px;
+  height: 75px;
+}
+.imac-logos-xapo {
+  order: 1;
+  width: 75px;
+}
+.imac-logos-bitgo {
+  order: 3;
+  width: 78px;
+}
+.imac-logos-kt {
+  order: 2;
+  width: 67px;
+}
+.imac-button-after-text {
+  display: none;
+}
+.imac-button-after-image {
+  display: initial;
+}
+.imac-images {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 280px;
+  height: 263px;
+}
+.imac-images-lock {
+  display: none;
+}
+.imac-images-imac {
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (min-width: 700px) {
@@ -605,12 +676,11 @@
     border: none;
   }
 
-  .invest-container {
+  .invest-container, .invest-images, .invest-list-item {
     justify-content: flex-start;
   }
   .invest-title {
     width: 965px;
-    margin: 0;
   }
   .invest-title h1 {
     font-family: Khula, Helvetica, Arial, sans-serif;
@@ -627,7 +697,6 @@
   }
   .invest-images {
     display: flex;
-    justify-content: flex-start;
     align-content: flex-start;
     flex-wrap: wrap;
     width: 530px;
@@ -654,7 +723,6 @@
   }
   .invest-list-item {
     flex-direction: row;
-    justify-content: flex-start;
     align-items: flex-start;
     height: 55px;
   }
@@ -682,67 +750,83 @@
   }
 
   .imac-container {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    flex-wrap: wrap;
-    width: 100%;
-    min-width: 1280px;
     height: 889px;
+    min-width: 1280px;
     margin-top: 229px;
-    background-image: linear-gradient(to top right, #61aaff, #2a6dff);
   }
   .imac-content {
-    display: flex;
+    flex-direction: row;
     justify-content: flex-end;
-    width: 1280px;
+    align-items: flex-start;
+    width: 1320px;
     height: 660px;
   }
   .imac-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: block;
+    align-self: flex-start;
     width: 630px;
-    height: 545px;
+    height: 613px;
+  }
+  .imac-text h1, .imac-text p {
+    text-align: left;
+    color: white;
   }
   .imac-text h1 {
     font-family: Khula, Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 56px;
-    color: white;
-    height: 79px;
+    margin-top: 39px;
   }
   .imac-text p {
     font-family: Khula, Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: white;
     height: 56px;
+    margin-top: 114px;
   }
   .imac-logos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     width: 488px;
     height: 125px;
+    margin-top: 22px;
+  }
+  .imac-logos-xapo {
+    order: 1;
+    width: 146px;
+  }
+  .imac-logos-bitgo {
+    order: 2;
+    width: 133px;
+  }
+  .imac-logos-kt {
+    order: 3;
+    width: 125px;
+  }
+  .imac-button-after-text {
+    display: initial;
+    margin-top: 21px;
+  }
+  .imac-button-after-image {
+    display: none;
+  }
+  .imac-images, .imac-images-lock, .imac-images-imac {
+    justify-content: flex-start;
   }
   .imac-images {
-    display: flex;
+    align-items: flex-start;
     width: 689px;
     height: inherit;
     overflow: hidden;
   }
   .imac-images-lock {
     display: flex;
-    justify-content: flex-start;
     align-items: flex-end;
     width: 92px;
+    height: inherit;
   }
   .imac-images-imac {
-    display: flex;
-    justify-content: flex-start;
     width: 598px;
   }
 
