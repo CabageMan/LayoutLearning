@@ -1,8 +1,17 @@
 'use strict';
 
+window.addEventListener('scroll', () => {
+    document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+});
+
 document.getElementById('navbarMenuButton').addEventListener('click', function(event) {
     event.preventDefault();
     openMenu();
+});
+
+document.getElementById('toTheTopButton').addEventListener('click', function(event) {
+    event.preventDefault();
+    scrollToTheTop();
 });
 
 function openMenu() {
@@ -28,6 +37,7 @@ function openMenu() {
     }
 }
 
-window.addEventListener('scroll', () => {
-    document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
-});
+function scrollToTheTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}

@@ -41,14 +41,24 @@
     }
 }
 
-.menu-button {
+.menu-button, .to-the-top-button {
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     background-color: transparent;
     border: none;
+}
+
+.menu-button {
     margin-top: 7px;
+}
+
+.to-the-top-button {
+    @include center-black;
+    @include khula-font(400, 16px);
+    width: 105px;
+    height: 32px;
 }
 
 .button-icon:after { 

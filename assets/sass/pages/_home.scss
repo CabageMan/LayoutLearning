@@ -304,6 +304,99 @@
     }
 }
 
+.about {
+    &-container, &-us, &-our-partners, &-subscribe, &-logos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-us, &-our-partners, &-subscribe {
+        justify-content: flex-end;
+    }
+
+    &-container {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 1525px;
+    }
+
+    &-us {
+        width: $mobileMinPageWidth;
+        height: 508px;
+        h2 {
+            @include center-black;
+            @include khula-font(300, 24px);
+            height: 237px;
+        }
+    }
+
+    &-our-partners {
+        width: $mobileMinPageWidth;
+        height: 509px;
+        h1, p { @include center-black};
+        h1 {
+            @include khula-font(600, 20px);
+            height: 29px;
+            margin: 0;
+        }
+
+        p {
+            @include khula-font(400, 14px);
+            height: 103px;
+            margin-top: 18px;
+        }
+    }
+
+    &-subscribe {
+        width: $mobileMinPageWidth;
+        height: 298px;
+        h2 {
+            @include center-black;
+            @include khula-font(300, 24px);
+            width: inherit;
+            height: 70px;
+        }
+    }
+
+    &-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: $mobileMinPageWidth;
+        height: 56px;
+    }
+
+    &-logos {
+        justify-content: space-between;
+        width: $mobileMinPageWidth;
+        height: 167px;
+    }
+
+    &-email-field {
+        width: inherit;
+        height: 36px;
+        background-color: transparent;
+        padding-bottom: 6px;
+        text-align: center;
+        border: {
+            style: none none solid none;
+            color:  $emailFieldBorderColor;
+            width: 1px;
+        }
+        &, &::placeholder { @include khula-font(400, 16px) }
+    }
+
+    &-bottom-button {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: inherit;
+        height: 170px;
+    }
+}
+
 @media screen and (min-width: 700px) {
     .cryptocurrency {
         &-container {
@@ -580,38 +673,27 @@
     }
     
     .about {
+        &-us, &-our-partners, &-subscribe {
+            justify-content: space-between;
+        }
+
         &-container {
-            display: flex;
-            flex-direction: column;
             justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-            width: 100%;
             height: 1623px;
         }
     
         &-us {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
             width: 1192px;
             height: 208px;
             h2 { 
-                @include center-black;
                 @include khula-font(300, 34px);
                 height: 112px;
             }
         }
     
         &-our-partners {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
             width: 883px;
             height: 230px;
-            h1, p { @include center-black; }
             h1 { 
                 @include khula-font(300, 46px);
                 height: 60px;
@@ -623,47 +705,30 @@
         }
     
         &-subscribe {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
             width: 450px;
             height: 164px;
             h2 { 
-                @include center-black;
                 @include khula-font(300, 34px);
                 height: 56px;
             }
         }
     
         &-buttons {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             width: 407px;
-            height: 56px;
         }
     
         &-logos {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            flex-direction: row;
             width: 623px;
             height: 66px;
         }
     
         &-email-field {
             width: 450px;
-            height: 36px;
-            background-color: transparent; 
-            padding-bottom: 6px;
-            text-align: center;
-            border: {
-                style: none  none solid none;
-                color: $emailFieldBorderColor;
-                width: 1px;
-            }
-            &, &::placeholder { @include khula-font(400, 16px); }
+        }
+
+        &-bottom-button {
+            display: none;
         }
     }   
 }

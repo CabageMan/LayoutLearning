@@ -204,9 +204,21 @@
                 <h1>Our partners</h1>
                 <p>IronChain Capital is funded by well established venture capital firms supporting our vision for the<br>long term.</p>
                 <div class="about-logos">
-                    <img src="/assets/images/logos/MatrixPartnersLogo.svg">
-                    <img src="/assets/images/logos/MontageVenturesLogo.svg">
-                    <img src="/assets/images/logos/DraftVenturesLogo.svg">
+                    <picture>
+                        <source srcset="/assets/images/logos/small/MatrixPartnersLogoSmall.svg" media="(max-width: 700px)">
+                        <source srcset="/assets/images/logos/MatrixPartnersLogo.svg">
+                        <img src="/assets/images/logos/MatrixPartnersLogo.svg">
+                    </picture>
+                    <picture>
+                        <source srcset="/assets/images/logos/small/MontageVenturesLogoSmall.svg" media="(max-width: 700px)">
+                        <source srcset="/assets/images/logos/MontageVenturesLogo.svg">
+                        <img src="/assets/images/logos/MontageVenturesLogo.svg">
+                    </picture>
+                    <picture>
+                        <source srcset="/assets/images/logos/small/DraftVenturesLogoSmall.svg" media="(max-width: 700px)">
+                        <source srcset="/assets/images/logos/DraftVenturesLogo.svg">
+                        <img src="/assets/images/logos/DraftVenturesLogo.svg">
+                    </picture>
                 </div>
             </div>
             <div class="about-subscribe">
@@ -214,6 +226,9 @@
                 <form name="subscribeEmailForm">
                     <input class="about-email-field" type="text" placeholder="Your Email" name="email">
                 </form>
+            </div>
+            <div class="about-bottom-button">
+                <button id="toTheTopButton" class="to-the-top-button">TO THE TOP</button>
             </div>
         </div>
         <!-- Footer -->

@@ -331,14 +331,27 @@
   height: 56px;
 }
 
-.menu-button {
+.menu-button, .to-the-top-button {
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   background-color: transparent;
   border: none;
+}
+
+.menu-button {
   margin-top: 7px;
+}
+
+.to-the-top-button {
+  text-align: center;
+  color: black;
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  width: 105px;
+  height: 32px;
 }
 
 .button-icon:after {
@@ -659,6 +672,102 @@
   margin-top: -20px;
 }
 
+.about-container, .about-us, .about-our-partners, .about-subscribe, .about-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-us, .about-our-partners, .about-subscribe {
+  justify-content: flex-end;
+}
+.about-container {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 1525px;
+}
+.about-us {
+  width: 280px;
+  height: 508px;
+}
+.about-us h2 {
+  text-align: center;
+  color: black;
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  height: 237px;
+}
+.about-our-partners {
+  width: 280px;
+  height: 509px;
+}
+.about-our-partners h1, .about-our-partners p {
+  text-align: center;
+  color: black;
+}
+.about-our-partners h1 {
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  height: 29px;
+  margin: 0;
+}
+.about-our-partners p {
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  height: 103px;
+  margin-top: 18px;
+}
+.about-subscribe {
+  width: 280px;
+  height: 298px;
+}
+.about-subscribe h2 {
+  text-align: center;
+  color: black;
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  width: inherit;
+  height: 70px;
+}
+.about-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  height: 56px;
+}
+.about-logos {
+  justify-content: space-between;
+  width: 280px;
+  height: 167px;
+}
+.about-email-field {
+  width: inherit;
+  height: 36px;
+  background-color: transparent;
+  padding-bottom: 6px;
+  text-align: center;
+  border-style: none none solid none;
+  border-color: #979797;
+  border-width: 1px;
+}
+.about-email-field, .about-email-field::placeholder {
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.about-bottom-button {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: inherit;
+  height: 170px;
+}
+
 @media screen and (min-width: 700px) {
   .cryptocurrency-container {
     justify-content: center;
@@ -911,42 +1020,26 @@
     height: 142px;
   }
 
+  .about-us, .about-our-partners, .about-subscribe {
+    justify-content: space-between;
+  }
   .about-container {
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
     height: 1623px;
   }
   .about-us {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     width: 1192px;
     height: 208px;
   }
   .about-us h2 {
-    text-align: center;
-    color: black;
     font-family: Khula, Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 34px;
     height: 112px;
   }
   .about-our-partners {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     width: 883px;
     height: 230px;
-  }
-  .about-our-partners h1, .about-our-partners p {
-    text-align: center;
-    color: black;
   }
   .about-our-partners h1 {
     font-family: Khula, Helvetica, Arial, sans-serif;
@@ -961,53 +1054,31 @@
     height: 56px;
   }
   .about-subscribe {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     width: 450px;
     height: 164px;
   }
   .about-subscribe h2 {
-    text-align: center;
-    color: black;
     font-family: Khula, Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 34px;
     height: 56px;
   }
   .about-buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 407px;
-    height: 56px;
   }
   .about-logos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
     width: 623px;
     height: 66px;
   }
   .about-email-field {
     width: 450px;
-    height: 36px;
-    background-color: transparent;
-    padding-bottom: 6px;
-    text-align: center;
-    border-style: none none solid none;
-    border-color: #979797;
-    border-width: 1px;
   }
-  .about-email-field, .about-email-field::placeholder {
-    font-family: Khula, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+  .about-bottom-button {
+    display: none;
   }
 }
 body, html {
-  width: 100%;
   margin: 0;
   padding: 0;
 }
