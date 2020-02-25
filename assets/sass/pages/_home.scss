@@ -62,14 +62,12 @@
     &-images {
         display: flex;
         justify-content: flex-end;
-        align-items: flex-start;
+        align-items: center;
         height: 560px;
 
         &-phone {
-            margin: -88px 0 0 62px;
-            // width: 879px;
             height: 720px;
-            z-index: 0;
+            z-index: 1;
         }
 
         &-shadow {
@@ -397,7 +395,7 @@
     }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: $responsiveWidth) {
     .cryptocurrency {
         &-container {
             justify-content: center;
@@ -558,7 +556,7 @@
             justify-content: center;
             align-items: flex-end;
             height: 889px;
-            min-width: $minPageWidth;
+            min-width: 1320px;
             margin-top: 229px;
         }
     
@@ -566,7 +564,7 @@
             flex-direction: row;
             justify-content: flex-end;
             align-items: flex-start;
-            width: 1320px;
+            width: inherit;
             height: 660px;
         }
     

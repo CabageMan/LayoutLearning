@@ -3,7 +3,7 @@
     &-container {
         display: flex;
         justify-content: space-between;
-        min-width: 280px;
+        min-width: $mobileMinPageWidth;
         margin-top: 15px;
     }
 
@@ -58,7 +58,7 @@
     }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: $responsiveWidth) {
     .navbar {
         &-container {
             display: flex;

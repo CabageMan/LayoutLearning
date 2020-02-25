@@ -67,7 +67,7 @@
 .arrow-white:after { background-image: url("/assets/images/icons/WhiteArrow.svg"); }
 .arrow-blue:after { background-image: url("/assets/images/icons/BlueArrow.svg"); }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: $responsiveWidth) {
     .filled-large {
         width: $mobileMinPageWidth;
     }

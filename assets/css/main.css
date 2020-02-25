@@ -442,13 +442,12 @@
 .cryptocurrency-images {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-start;
+  align-items: center;
   height: 560px;
 }
 .cryptocurrency-images-phone {
-  margin: -88px 0 0 62px;
   height: 720px;
-  z-index: 0;
+  z-index: 1;
 }
 .cryptocurrency-images-shadow {
   display: none;
@@ -914,14 +913,14 @@
     justify-content: center;
     align-items: flex-end;
     height: 889px;
-    min-width: 1280px;
+    min-width: 1320px;
     margin-top: 229px;
   }
   .imac-content {
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-start;
-    width: 1320px;
+    width: inherit;
     height: 660px;
   }
   .imac-text {
