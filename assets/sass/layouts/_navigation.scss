@@ -34,19 +34,19 @@
             width: 320px;
             height: 570px;
             min-width: 320px;
-            margin-top: 30px;
+            margin-top: 32px;
             margin-right: 0;
             background-color: $dropDownBackgroundColor;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
             position: absolute;
     
-            a {
+            a, a:visited, a:active {
+                @include left-black;
+                @include khula-font(400, 16px);
                 margin-left: 70px;
                 text-decoration: none;
-                @include khula-font(400, 16px);
             }
-    
             button {
                 align-self: center;
             }
@@ -79,11 +79,12 @@
             display: flex;
             justify-content: flex-end;
             padding: 12px 40px;
-            a {
+            a, a:visited, a:active {
+                @include center-black;
+                @include khula-font(400, 14px);
                 align-self: center;
                 padding-right: 65px;
                 text-decoration: none;
-                @include khula-font(400, 14px);
             }
         }
 

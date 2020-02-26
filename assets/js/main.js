@@ -4,9 +4,18 @@ window.addEventListener('scroll', () => {
     document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
 });
 
+window.addEventListener('click', (event) => {
+    if (!(event.target.id == 'navbarMenuButton' || event.target.id == 'menuButtonImage' || event.target.id == 'navbarMenu')) {
+        let navBarMenu = document.getElementById('navbarMenu');
+        if (navBarMenu.classList.contains('navbar-menu-shown')) {
+            toggleMenu();
+        }
+    }
+});
+
 document.getElementById('navbarMenuButton').addEventListener('click', function(event) {
     event.preventDefault();
-    openMenu();
+    toggleMenu();
 });
 
 document.getElementById('toTheTopButton').addEventListener('click', function(event) {
@@ -14,26 +23,24 @@ document.getElementById('toTheTopButton').addEventListener('click', function(eve
     scrollToTheTop();
 });
 
-function openMenu() {
+function toggleMenu() {
     const body = document.body;
     let navBarMenu = document.getElementById('navbarMenu');
     let menuButtonImage = document.getElementById('menuButtonImage')
-    
-    navBarMenu.classList.toggle('navbar-menu-shown');
 
     if (navBarMenu.classList.contains('navbar-menu-shown')) {
-        const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
-        body.style.position = 'fixed';
-        body.style.top = `-${scrollY}`;
-
-        menuButtonImage.src = '/assets/images/icons/CrossIcon.svg';
-    } else {
-        const scrollY = body.style.top;
-        body.style.position = '';
-        body.style.top = '';
-        window.scrollTo(0, parseInt(scrollY || '0') * -1);
-
+        // const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+        // body.style.position = 'fixed';
+        // body.style.top = `-${scrollY}`;
+        navBarMenu.classList.remove('navbar-menu-shown');
         menuButtonImage.src = '/assets/images/icons/MenuIcon.svg';
+    } else {
+        // const scrollY = body.style.top;
+        // body.style.position = '';
+        // body.style.top = '';
+        // window.scrollTo(0, parseInt(scrollY || '0') * -1);
+        navBarMenu.classList.add('navbar-menu-shown');
+        menuButtonImage.src = '/assets/images/icons/CrossIcon.svg';
     }
 }
 

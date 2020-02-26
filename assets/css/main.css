@@ -29,19 +29,21 @@
   width: 320px;
   height: 570px;
   min-width: 320px;
-  margin-top: 30px;
+  margin-top: 32px;
   margin-right: 0;
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   position: absolute;
 }
-.navbar-menu-container a {
-  margin-left: 70px;
-  text-decoration: none;
+.navbar-menu-container a, .navbar-menu-container a:visited, .navbar-menu-container a:active {
+  text-align: left;
+  color: black;
   font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
+  margin-left: 70px;
+  text-decoration: none;
 }
 .navbar-menu-container button {
   align-self: center;
@@ -69,13 +71,15 @@
     justify-content: flex-end;
     padding: 12px 40px;
   }
-  .navbar-links a {
-    align-self: center;
-    padding-right: 65px;
-    text-decoration: none;
+  .navbar-links a, .navbar-links a:visited, .navbar-links a:active {
+    text-align: center;
+    color: black;
     font-family: Khula, Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 14px;
+    align-self: center;
+    padding-right: 65px;
+    text-decoration: none;
   }
   .navbar-menu {
     display: none;
@@ -342,6 +346,7 @@
 
 .menu-button {
   margin-top: 7px;
+  height: 27px;
 }
 
 .to-the-top-button {
