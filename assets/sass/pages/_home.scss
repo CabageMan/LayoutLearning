@@ -28,10 +28,16 @@
 
         h1 { 
             @include khula-font(300, 32px);
+            letter-spacing: 1px;
+            line-height: 40px;
+            width: $mobileMinPageWidth;
             margin-top: 37px;
         }
         p { 
             @include khula-font(400, 14px);
+            letter-spacing: 0.5px;
+            line-height: 22px;
+            width: $mobileMinPageWidth;
             margin: 0;
         }
 
@@ -107,7 +113,10 @@
         margin: 0;
         h1 { 
             @include center-black;
-            @include khula-font(300, 29px);
+            @include khula-font(300, 32px);
+            letter-spacing: 1px;
+            line-height: 40px;
+            width: inherit;
             margin-top: -3px;
         }
     }
@@ -153,6 +162,7 @@
             }
             p {
                 @include khula-font(400, 16px);
+                width: 238px;
                 margin: 0px;
             }
         }
@@ -196,10 +206,16 @@
         h1, p { @include center-white; }
         h1 {
             @include khula-font(300, 32px);
+            letter-spacing: 1px;
+            line-height: 40px;
+            width: inherit;
             height: 80px;
         }
         p {
             @include khula-font(400, 14px);
+            letter-spacing: 0.5px;
+            line-height: 22px;
+            width: inherit;
             height: 66px;
         }
     }
@@ -276,6 +292,9 @@
         h1 {
             @include center-black;
             @include khula-font(300, 32px);
+            letter-spacing: 1px;
+            line-height: 40px;
+            width: inherit;
             height: 160px;
             margin: 0;
         }
@@ -326,6 +345,9 @@
         h2 {
             @include center-black;
             @include khula-font(300, 24px);
+            letter-spacing: 1px;
+            line-height: 32px;
+            width: 253px;
             height: 237px;
         }
     }
@@ -336,12 +358,17 @@
         h1, p { @include center-black};
         h1 {
             @include khula-font(600, 20px);
+            letter-spacing: 1px;
+            line-height: 29px;
             height: 29px;
             margin: 0;
         }
 
         p {
             @include khula-font(400, 14px);
+            letter-spacing: 0.5px;
+            line-height: 22px;
+            width: 253px;
             height: 103px;
             margin-top: 18px;
         }
@@ -353,6 +380,8 @@
         h2 {
             @include center-black;
             @include khula-font(300, 24px);
+            letter-spacing: 1px;
+            line-height: 32px;
             width: inherit;
             height: 70px;
         }
@@ -421,10 +450,14 @@
     
             h1 { 
                 @include khula-font(300, 56px);
+                line-height: 79px;
+                width: 625px;
                 margin-top: 46px;
             }
             p { 
                 @include khula-font(400, 16px);
+                line-height: 28px;
+                width: 157px;
                 margin-top: 23px;
             }
     
@@ -476,9 +509,10 @@
         }
     
         &-title {
-            width: 965px;
+            width: 955px;
             h1 {
                 @include khula-font(300, 56px);
+                line-height: 64px;
             }
         }
     
@@ -535,10 +569,11 @@
                 height: 55px;
                 margin-left: 25px;
                 h3, p { @include left-black; }
-                h3 { 
+                h3 {
                     margin-top: 2px;
                 }
                 p { 
+                    width: 475px;
                     margin-top: -23px;
                 }
             }
@@ -576,10 +611,13 @@
             h1, p { @include left-white; }
             h1 {
                 @include khula-font(300, 56px);
+                line-height: 79px;
                 margin-top: 39px;
             }
             p {
                 @include khula-font(400, 16px);
+                line-height: 28px;
+                width: 465px;
                 height: 56px;
                 margin-top: 114px;
             }
@@ -649,6 +687,7 @@
             height: 354px;
             h1 { 
                 @include khula-font(300, 56px);
+                line-height: 64px;
             }
         }
     
@@ -681,10 +720,12 @@
         }
     
         &-us {
-            width: 1192px;
+            width: 995px;
             height: 208px;
             h2 { 
                 @include khula-font(300, 34px);
+                line-height: 56px;
+                width: inherit;
                 height: 112px;
             }
         }
@@ -694,10 +735,13 @@
             height: 230px;
             h1 { 
                 @include khula-font(300, 46px);
+                line-height: 60px;
                 height: 60px;
             }
             p {
                 @include khula-font(400, 16px);
+                line-height: 28px;
+                width: 735px;
                 height: 56px;
             }
         }
@@ -707,6 +751,7 @@
             height: 164px;
             h2 { 
                 @include khula-font(300, 34px);
+                line-height: 56px;
                 height: 56px;
             }
         }

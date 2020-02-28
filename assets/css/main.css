@@ -149,6 +149,8 @@
   font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 22px;
   color: #959595;
   text-align: center;
   height: 66px;
@@ -168,8 +170,8 @@
 }
 .footer-text p {
   text-align: justify;
-  line-height: 22px;
   letter-spacing: 0.5px;
+  line-height: 22px;
 }
 .footer-text a {
   color: #959595;
@@ -212,13 +214,15 @@
     font-size: 14px;
   }
   .footer-title {
-    width: 844px;
+    width: 355px;
     height: 145px;
   }
   .footer-title p {
     font-family: Khula, Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 14px;
+    line-height: 26px;
+    width: inherit;
     height: 52px;
   }
   .footer-content {
@@ -226,13 +230,13 @@
     width: 844px;
   }
   .footer-text {
-    font-family: Khula, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
     width: 407px;
   }
   .footer-text p {
-    text-indent: 50px;
+    font-family: Khula, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    width: inherit;
     line-height: 26px;
   }
   .footer-divider {
@@ -355,7 +359,9 @@
   font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
-  width: 105px;
+  letter-spacing: 2px;
+  line-height: 32px;
+  width: 120px;
   height: 32px;
 }
 
@@ -413,12 +419,18 @@
   font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 32px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  width: 280px;
   margin-top: 37px;
 }
 .cryptocurrency-text p {
   font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+  width: 280px;
   margin: 0;
 }
 .cryptocurrency-text form {
@@ -487,7 +499,10 @@
   color: black;
   font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 29px;
+  font-size: 32px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  width: inherit;
   margin-top: -3px;
 }
 .invest-content {
@@ -536,6 +551,7 @@
   font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
+  width: 238px;
   margin: 0px;
 }
 .invest-button {
@@ -576,12 +592,18 @@
   font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 32px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  width: inherit;
   height: 80px;
 }
 .imac-text p {
   font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+  width: inherit;
   height: 66px;
 }
 .imac-logos {
@@ -646,6 +668,9 @@
   font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 32px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  width: inherit;
   height: 160px;
   margin: 0;
 }
@@ -699,6 +724,9 @@
   font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 24px;
+  letter-spacing: 1px;
+  line-height: 32px;
+  width: 253px;
   height: 237px;
 }
 .about-our-partners {
@@ -713,6 +741,8 @@
   font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 29px;
   height: 29px;
   margin: 0;
 }
@@ -720,6 +750,9 @@
   font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+  width: 253px;
   height: 103px;
   margin-top: 18px;
 }
@@ -733,6 +766,8 @@
   font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 24px;
+  letter-spacing: 1px;
+  line-height: 32px;
   width: inherit;
   height: 70px;
 }
@@ -798,12 +833,16 @@
     font-family: Khula, Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 56px;
+    line-height: 79px;
+    width: 625px;
     margin-top: 46px;
   }
   .cryptocurrency-text p {
     font-family: Khula, Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 16px;
+    line-height: 28px;
+    width: 157px;
     margin-top: 23px;
   }
   .cryptocurrency-text form {
@@ -845,12 +884,13 @@
     justify-content: flex-start;
   }
   .invest-title {
-    width: 965px;
+    width: 955px;
   }
   .invest-title h1 {
     font-family: Khula, Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 56px;
+    line-height: 64px;
   }
   .invest-content {
     flex-direction: row;
@@ -906,6 +946,7 @@
     margin-top: 2px;
   }
   .invest-list-content p {
+    width: 475px;
     margin-top: -23px;
   }
   .invest-button {
@@ -942,12 +983,15 @@
     font-family: Khula, Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 56px;
+    line-height: 79px;
     margin-top: 39px;
   }
   .imac-text p {
     font-family: Khula, Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 16px;
+    line-height: 28px;
+    width: 465px;
     height: 56px;
     margin-top: 114px;
   }
@@ -1006,6 +1050,7 @@
     font-family: Khula, Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 56px;
+    line-height: 64px;
   }
   .advantages-content {
     flex-direction: row;
@@ -1031,13 +1076,15 @@
     height: 1623px;
   }
   .about-us {
-    width: 1192px;
+    width: 995px;
     height: 208px;
   }
   .about-us h2 {
     font-family: Khula, Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 34px;
+    line-height: 56px;
+    width: inherit;
     height: 112px;
   }
   .about-our-partners {
@@ -1048,12 +1095,15 @@
     font-family: Khula, Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 46px;
+    line-height: 60px;
     height: 60px;
   }
   .about-our-partners p {
     font-family: Khula, Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 16px;
+    line-height: 28px;
+    width: 735px;
     height: 56px;
   }
   .about-subscribe {
@@ -1064,6 +1114,7 @@
     font-family: Khula, Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 34px;
+    line-height: 56px;
     height: 56px;
   }
   .about-buttons {

@@ -55,6 +55,8 @@
         height: 130px;
         p {
             @include khula-font(400, 12px);
+            letter-spacing: 0.5px;
+            line-height: 22px;
             color: $footerTextColor;
             text-align: center;
             height: 66px;
@@ -74,8 +76,8 @@
         width: inherit;
         p {
             text-align: justify;
-            line-height: 22px;
             letter-spacing: 0.5px;
+            line-height: 22px;
         }
         a {
             color: $footerTextColor;
@@ -121,10 +123,12 @@
         }
     
         &-title {
-            width: 844px;
+            width: 355px;
             height: 145px;
             p {
                 @include khula-font(400, 14px);
+                line-height: 26px;
+                width: inherit;
                 height: 52px;
             }
         }
@@ -135,10 +139,10 @@
         }
     
         &-text {
-            @include khula-font(400, 14px);
             width: 407px;
             p { 
-                text-indent: 50px;
+                @include khula-font(400, 14px);
+                width: inherit;
                 line-height: 26px;
             }
         }

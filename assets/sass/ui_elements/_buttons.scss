@@ -58,7 +58,9 @@
 .to-the-top-button {
     @include center-black;
     @include khula-font(400, 16px);
-    width: 105px;
+    letter-spacing: 2px;
+    line-height: 32px;
+    width: 120px;
     height: 32px;
 }
 
