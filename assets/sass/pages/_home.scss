@@ -393,6 +393,21 @@
         align-items: center;
         width: $mobileMinPageWidth;
         height: 56px;
+
+        &-get-access {
+            order: 2;
+            width: $buttonWidthExtraSmall;
+            @include khula-font(600, 14px);
+            i {
+                display: none;
+            }
+        }
+
+        &-join-us {
+            order: 1;
+            width: $buttonWidthExtraSmall;
+            @include khula-font(600, 14px);
+        }
     }
 
     &-logos {
@@ -758,6 +773,21 @@
     
         &-buttons {
             width: 407px;
+
+            &-get-access {
+                order: 1;
+                width: $buttonWidthSmall;
+                @include khula-font(600, 16px);
+                i {
+                    display: initial;
+                }
+            }
+    
+            &-join-us {
+                order: 2;
+                width: $buttonWidthSmall;
+                @include khula-font(600, 16px);
+            }
         }
     
         &-logos {

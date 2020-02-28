@@ -778,6 +778,23 @@
   width: 280px;
   height: 56px;
 }
+.about-buttons-get-access {
+  order: 2;
+  width: 132px;
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+.about-buttons-get-access i {
+  display: none;
+}
+.about-buttons-join-us {
+  order: 1;
+  width: 132px;
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
 .about-logos {
   justify-content: space-between;
   width: 280px;
@@ -1119,6 +1136,23 @@
   }
   .about-buttons {
     width: 407px;
+  }
+  .about-buttons-get-access {
+    order: 1;
+    width: 189px;
+    font-family: Khula, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .about-buttons-get-access i {
+    display: initial;
+  }
+  .about-buttons-join-us {
+    order: 2;
+    width: 189px;
+    font-family: Khula, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
   }
   .about-logos {
     flex-direction: row;
