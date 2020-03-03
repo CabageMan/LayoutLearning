@@ -13,18 +13,28 @@ window.addEventListener('click', (event) => {
     }
 });
 
-document.getElementById('navbarMenuButton').addEventListener('click', function(event) {
+document.getElementById('showModalBtn').addEventListener('click', (event) => {
+    event.preventDefault();
+    showModalView();
+});
+
+document.getElementById('modalCloseButton').addEventListener('click', (event) => {
+    event.preventDefault();
+    showModalView();
+});
+
+document.getElementById('navbarMenuButton').addEventListener('click', (event) => {
     event.preventDefault();
     toggleMenu();
 });
 
-document.getElementById('toTheTopButton').addEventListener('click', function(event) {
+document.getElementById('toTheTopButton').addEventListener('click', (event) => {
     event.preventDefault();
     scrollToTheTop();
 });
 
 function toggleMenu() {
-    const body = document.body;
+    // const body = document.body;
     let navBarMenu = document.getElementById('navbarMenu');
     let menuButtonImage = document.getElementById('menuButtonImage')
 
@@ -42,6 +52,17 @@ function toggleMenu() {
         navBarMenu.classList.add('navbar-menu-shown');
         menuButtonImage.src = '/assets/images/icons/CrossIcon.svg';
     }
+}
+
+function showModalView() {
+    let modalView = document.getElementById('modalWindow');
+    modalView.classList.contains('modal-shown') ? modalView.classList.remove('modal-shown') : modalView.classList.add('modal-shown');
+    // if (modalView.classList.contains('modal-shown')) {
+    //     modalView.classList.remove('modal-shown');
+    // } else {
+
+    // }
+    // modalView.classList.toggle('modal-shown');
 }
 
 function scrollToTheTop() {
