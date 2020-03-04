@@ -15,7 +15,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        width: 500px;
+        max-width: 500px;
         height: 450px;
         border-radius: 5px;
         background-color: $dropDownBackgroundColor;
@@ -86,6 +86,8 @@
     to { transform: scale(1) }
 }
 
-@media screen and (max-width: 300px) {
-
+@media screen and (max-width: 500px) {
+    .modal-container {
+        margin: 0 13px 0 13px;
+    }
 }
