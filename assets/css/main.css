@@ -394,12 +394,12 @@
   display: none;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  margin-top: -31px;
-  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: 1;
-  position: absolute;
   background-color: rgba(0, 0, 0, 0.4);
 }
 .modal-container {
@@ -451,6 +451,7 @@
 }
 .modal-shown {
   display: flex;
+  overflow-y: hidden;
 }
 
 .zoom-animation {
@@ -1251,6 +1252,8 @@
   }
 }
 body, html {
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
 }
