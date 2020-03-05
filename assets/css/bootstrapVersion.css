@@ -1,0 +1,163 @@
+.navbar {
+  background: transparent;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+.navbar-toggler:focus, .navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+
+#mainNavBar button {
+  border-radius: 0;
+  border: 1px solid #61aaff;
+  color: #61aaff;
+  background: transparent;
+  width: 192px;
+  height: 46px;
+  text-align: center;
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+#mainNavBar button:hover {
+  border-color: blue;
+}
+
+.nav-link,
+.navbar-brand {
+  text-align: left;
+  color: black;
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav-link {
+  margin-right: 1em !important;
+}
+.nav-link:hover {
+  background: transparent;
+  color: #979797;
+}
+
+.empty-small, .empty-blue, .empty-extra-large {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border: 1px solid #61aaff;
+  color: #61aaff;
+  background-color: transparent;
+}
+.empty-small {
+  width: 192px;
+  height: 46px;
+}
+.empty-large {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  width: 192px;
+  height: 56px;
+}
+.empty-blue {
+  width: 189px;
+  height: 56px;
+}
+.empty-extra-large {
+  width: 280px;
+  height: 56px;
+}
+
+.filled-small, .filled-large {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  background-color: #61aaff;
+  color: white;
+}
+.filled-small {
+  width: 189px;
+  height: 56px;
+}
+.filled-large {
+  width: 192px;
+  height: 56px;
+}
+
+.menu-button, .to-the-top-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.menu-button {
+  margin-top: 7px;
+  height: 27px;
+}
+
+.to-the-top-button {
+  text-align: center;
+  color: black;
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 32px;
+  width: 120px;
+  height: 32px;
+}
+
+.button-icon:after {
+  content: "";
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 13px;
+  height: 8px;
+  float: right;
+  margin-top: 6px;
+  margin-right: 17px;
+}
+
+.arrow-white:after {
+  background-image: url("/assets/images/icons/WhiteArrow.svg");
+}
+
+.arrow-blue:after {
+  background-image: url("/assets/images/icons/BlueArrow.svg");
+}
+
+@media screen and (max-width: 700px) {
+  .filled-large {
+    width: 280px;
+  }
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: white;
+}
+
+/*# sourceMappingURL=bootstrapVersion.css.map */

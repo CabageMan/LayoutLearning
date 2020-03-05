@@ -1,0 +1,44 @@
+.navbar {
+    background: transparent;
+    &-collapse {
+        justify-content: flex-end;
+    }
+    &-toggler {
+        &:focus, &:active {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+}
+
+#mainNavBar {
+    button {
+        border-radius: 0;
+        border: 1px solid $blueColor;
+        color: $blueColor;
+        background: transparent;
+        width: 192px;
+        height: 46px;
+        text-align: center;
+        @include khula-font(600, 16px);
+
+        &:hover {
+            border-color: blue;
+        }
+    }
+}
+
+.nav-link,
+.navbar-brand {
+    @include left-black;
+    @include khula-font(400, 16px);
+    cursor: pointer;
+}
+
+.nav-link {
+    margin-right: 1em !important;
+    &:hover {
+        background: transparent;
+        color: $navLinkHoverColor;
+    }
+}

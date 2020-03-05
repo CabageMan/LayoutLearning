@@ -1,0 +1,16 @@
+
+
+// Imports
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "layouts/bootstrapNavigation";
+
+@import "ui_elements/buttons";
+
+// Styles
+body {
+    padding: 0;
+    margin: 0;
+    background: $mainBackgroundColor;
+}
