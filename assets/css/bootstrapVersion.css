@@ -154,6 +154,13 @@
     width: 280px;
   }
 }
+.imac-container {
+  color: #959595;
+  padding: 60px 0 30px;
+  height: 813px;
+  background-image: linear-gradient(to top right, #61aaff, #2a6dff);
+}
+
 .cryptocurrency-divider hr {
   margin-top: 83px;
   width: 342px;
@@ -184,6 +191,12 @@
 }
 #cryptocurrencyEmail input, #cryptocurrencyEmail input::placeholder {
   text-align: left;
+}
+
+.home-footer {
+  background-color: gray;
+  color: #959595;
+  padding: 60px 0 30px;
 }
 
 body {

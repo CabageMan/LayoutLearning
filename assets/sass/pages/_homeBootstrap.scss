@@ -1,3 +1,10 @@
+.imac-container {
+    color: $footerTextColor;
+    padding: 60px 0 30px;    
+    height: 813px;
+    @include background-gradient($backgroundGradientStartColor, $backgroundGradientEndColor);
+}
+
 .cryptocurrency-divider {
     hr {
         margin-top: 83px;
@@ -30,4 +37,10 @@
         padding: 0 20px;
         &, &::placeholder { text-align: left; }
     }
+}
+
+.home-footer {
+    background-color: gray;
+    color: $footerTextColor;
+    padding: 60px 0 30px;
 }
