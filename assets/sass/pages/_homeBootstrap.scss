@@ -1,0 +1,33 @@
+.cryptocurrency-divider {
+    hr {
+        margin-top: 83px;
+        width: 342px;
+        height: 2px;
+        background-color: $dividerColor;
+        border: none;
+    }
+}
+
+#cryptocurrencyEmail {
+    button {
+        border-radius: 0;
+        border: 0 none transparent;
+        color: white;
+        background: $blueColor;
+        width: 192px;
+        height: 56px;
+        text-align: center;
+        @include khula-font(600, 16px);
+
+        &:hover {
+            background: blue;
+        }
+    }
+
+    input {
+        width: 348px;
+        height: 56px;
+        padding: 0 20px;
+        &, &::placeholder { text-align: left; }
+    }
+}

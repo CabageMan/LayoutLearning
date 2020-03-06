@@ -154,6 +154,38 @@
     width: 280px;
   }
 }
+.cryptocurrency-divider hr {
+  margin-top: 83px;
+  width: 342px;
+  height: 2px;
+  background-color: #e9e9e9;
+  border: none;
+}
+
+#cryptocurrencyEmail button {
+  border-radius: 0;
+  border: 0 none transparent;
+  color: white;
+  background: #61aaff;
+  width: 192px;
+  height: 56px;
+  text-align: center;
+  font-family: Khula, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+#cryptocurrencyEmail button:hover {
+  background: blue;
+}
+#cryptocurrencyEmail input {
+  width: 348px;
+  height: 56px;
+  padding: 0 20px;
+}
+#cryptocurrencyEmail input, #cryptocurrencyEmail input::placeholder {
+  text-align: left;
+}
+
 body {
   padding: 0;
   margin: 0;
