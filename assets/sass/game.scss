@@ -1,0 +1,12 @@
+// Imports
+@import "abstracts/variables";
+
+canvas {
+    border: 1px solid $gameCanvasBorderColor;
+    background-color: $gameCanvasBackgroundColor;
+}
+
+.control-container {
+    text-align: center;
+    width: 480px;
+}

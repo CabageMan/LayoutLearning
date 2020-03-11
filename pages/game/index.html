@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Game</title>
+        <link rel="stylesheet" href="/assets/css/game.css">
+        <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    </head>
+    <body onload="startGame()">
+        <h1>Let's make a cool game</h1>
+        <div class="control-container">
+            <button onmousedown="moveUp()" onmouseup="stopMove()" ontouchstart="moveUp()">Up</button><br><br>
+            <button onmousedown="moveLeft()" onmouseup="stopMove()" ontouchstart="moveLeft()">Left</button>
+            <button onmousedown="moveRight()" onmouseup="stopMove()" ontouchstart="moveRight()">Right</button><br><br>
+            <button onmousedown="moveDown()" onmouseup="stopMove()" ontouchstart="moveDown()">Down</button>
+        </div>
+        
+        <!-- Scrpts -->
+        <script src="/assets/js/game.js"></script>
+    </body>
+</html>
