@@ -138,14 +138,14 @@
 .footer-social-links a.m {
   background-image: url("/assets/images/MLogo.svg");
 }
-.footer-title {
+.footer-copyright {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   width: 280px;
   height: 130px;
 }
-.footer-title p {
+.footer-copyright p {
   font-family: Khula, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -213,11 +213,11 @@
     font-weight: 400;
     font-size: 14px;
   }
-  .footer-title {
+  .footer-copyright {
     width: 355px;
     height: 145px;
   }
-  .footer-title p {
+  .footer-copyright p {
     font-family: Khula, Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 14px;

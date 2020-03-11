@@ -1,17 +1,35 @@
-.imac-container {
-    color: $footerTextColor;
-    padding: 60px 0 30px;    
-    height: 813px;
-    @include background-gradient($backgroundGradientStartColor, $backgroundGradientEndColor);
+.top-section {
+    max-width: 1280px;
 }
 
-.cryptocurrency-divider {
-    hr {
-        margin-top: 83px;
-        width: 342px;
-        height: 2px;
-        background-color: $dividerColor;
-        border: none;
+.cryptocurrency {
+    height: 900px;
+
+    &-content {
+        h1 {
+            @include khula-font(300, 56px);
+            letter-spacing: 1px;
+            line-height: 79px;
+        }
+        p {
+            @include khula-font(400, 16px);
+            letter-spacing: 0.5px;
+            line-height: 28px;
+        }
+    }
+
+    &-images {
+        margin-top: 125px;
+    }
+
+    &-divider {
+        hr {
+            margin-top: 83px;
+            width: 342px;
+            height: 2px;
+            background-color: $dividerColor;
+            border: none;
+        }
     }
 }
 
@@ -20,14 +38,14 @@
         border-radius: 0;
         border: 0 none transparent;
         color: white;
-        background: $blueColor;
+        background-color: $blueColor;
         width: 192px;
         height: 56px;
         text-align: center;
         @include khula-font(600, 16px);
 
         &:hover {
-            background: blue;
+            background-color: blue;
         }
     }
 
@@ -39,8 +57,41 @@
     }
 }
 
+.invest {
+    height: 750px;
+
+    h1 {
+        width: 965px;
+        height: 128px;
+        @include khula-font(300, 56px);
+    }
+    &-content {
+        height: 410px;
+        background-color: $sectionBBackgroundColor;
+    }
+}
+
+.imac-container {
+    color: $footerTextColor;
+    padding: 60px 0 30px;    
+    height: 813px;
+    @include background-gradient($backgroundGradientStartColor, $backgroundGradientEndColor);
+}
+
 .home-footer {
-    background-color: gray;
+    height: 1413px;
+    background-color: $footerBackgroundColor;
     color: $footerTextColor;
     padding: 60px 0 30px;
+
+    &-divider {
+        width: 132px;
+        height: 66px;
+        hr {
+            width: inherit;
+            height: 1px;
+            background-color: $dividerColor;
+            border: none;
+        }
+    }
 }
