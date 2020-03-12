@@ -9,11 +9,16 @@
     </head>
     <body onload="startGame()">
         <h1>Let's make a cool game</h1>
+        <div id="restartButton">
+            <button onclick="restartGame()">Restart</button>
+        </div>
+        <div id="canvasContainer"></div>
         <div class="control-container">
-            <button onmousedown="moveUp()" onmouseup="stopMove()" ontouchstart="moveUp()">Up</button><br><br>
+            <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.1)">JUMP</button>
+            <!-- <button onmousedown="moveUp()" onmouseup="stopMove()" ontouchstart="moveUp()">Up</button><br><br>
             <button onmousedown="moveLeft()" onmouseup="stopMove()" ontouchstart="moveLeft()">Left</button>
             <button onmousedown="moveRight()" onmouseup="stopMove()" ontouchstart="moveRight()">Right</button><br><br>
-            <button onmousedown="moveDown()" onmouseup="stopMove()" ontouchstart="moveDown()">Down</button>
+            <button onmousedown="moveDown()" onmouseup="stopMove()" ontouchstart="moveDown()">Down</button> -->
         </div>
         
         <!-- Scrpts -->

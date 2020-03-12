@@ -1,5 +1,10 @@
 'use strict';
 
+// TO DO: 
+// Add image instead ball
+// Add moving background
+// Add images instead pipes
+
 // Constants
 // Sizes
 const canvasWidth = 480;
@@ -12,7 +17,7 @@ const pipesMinGap = 50;
 const pipesMaxGap = 200;
 
 // Positions
-const ballStartPositionX = 10;
+const ballStartPositionX = 30;
 const ballStartPositionY = 120;
 
 // Colors
@@ -33,13 +38,16 @@ let gameArea = {
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNumber = 0;
         this.interval = setInterval(updateGameArea, 20);
+        
     },
     clear: function() {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
     },
     stop: function() {
         clearInterval(this.interval);
-    }
+        this.context.fillStyle = 'rgba(0, 0, 0, 0.5)';
+        this.context.fillRect(0, 0, canvasWidth, canvasHeight);
+    },
 }
 
 function startGame() {
@@ -54,6 +62,8 @@ function ball(radius, centerColor, edgeColor, x, y) {
     this.speedY = 0;
     this.x = x;
     this.y = y;
+    this.gravity = 0.05;
+    this.gravitySpeed = 0;
     this.update = function() {
         let ctx = gameArea.context;
         ctx.beginPath();
@@ -70,8 +80,25 @@ function ball(radius, centerColor, edgeColor, x, y) {
         ctx.fill();
     }
     this.newPosition = function() {
+        this.gravitySpeed += this.gravity;
         this.x += this.speedX;
-        this.y += this.speedY;
+        this.y += this.speedY + this.gravitySpeed;
+        this.hitBottom();
+        this.hitTop();
+    }
+    this.hitBottom = function() {
+        let ground = gameArea.canvas.height - this.radius;
+        if (this.y > ground) {
+            this.y = ground;
+            this.gravitySpeed = 0;
+        }
+    }
+    this.hitTop = function() {
+        let top = this.radius;
+        if ((this.y < top && this.gravity > 0) || (this.y < top && this.gravity <= 0)) {
+            this.y = top;
+            this.gravitySpeed = 0.1;
+        }
     }
     this.crashWith = function(pipe) {
         let ballLeftEdge = this.x - this.radius;
@@ -112,13 +139,13 @@ function checkInterval(intervalNumber) {
 }
 
 function updateGameArea() {
-
     for (let i = 0; i < pipes.length; i++) {
         if (flappyBall.crashWith(pipes[i])) {
             gameArea.stop();
             return;
         }
     }
+
     gameArea.clear();
     gameArea.frameNumber++;
     
@@ -142,6 +169,20 @@ function updateGameArea() {
 }
 
 // Control 
+function accelerate(acceleration) {
+    flappyBall.gravity = acceleration;
+}
+
+function restartGame() {
+    // document.getElementById("restartButton").style.display = "none";
+    // gameArea.stop();
+    // gameArea.clear();
+    // gameArea = { };
+    // flappyBall = { };
+    // pipes = [ ];
+    // score = { };
+}
+
 function moveUp() {
     flappyBall.speedY--;
 }
